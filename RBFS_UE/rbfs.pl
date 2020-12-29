@@ -13,7 +13,7 @@
 
 % bestfirst(+Start, -Solution)
 % Solution is a path from Start to a goal
-bestfirst(Start, Goal, Solution) :- %%%%%%%%%%% Goal added
+bestfirst(Start, Goal, Solution) :-
     rbfs([], Goal, [ (Start, 0/0/0) ], 99999, _, yes, Solution).
 
 
@@ -41,7 +41,7 @@ rbfs(_, _, [], _, _, never, _) :- !.    % No candidates, dead end!
 rbfs(Path, Goal,  [ (Node, G/F/FF) | Ns], Bound, NewFF, Solved, Sol) :-
     FF =< Bound,                     % Within Bound: generate children
     findall(Child/Cost,
-            (road(Node, Child, Cost), \+ member(Child, Path)), %%%%%%%%%%%%% s -> road
+            (twoWayRoad(Node, Child, Cost), \+ member(Child, Path)),
             Children),
     inherit(F, FF, InheritedFF),     % Children may inherit FF
     succlist(G, Goal, InheritedFF, Children, SuccNodes),    % Order children
@@ -77,7 +77,7 @@ succlist(G0, Goal, InheritedFF, [Node/C | NCs], Nodes) :-
 
 
 inherit(F, FF, FF) :-                % Child inherits fathers FF if
-    FF > F, !.                       % Father's FF greater than father's F
+    FF > F, !.                       % Fathers FF greater than fathers F
 
 inherit(_, _, 0).
 
@@ -94,7 +94,7 @@ insert(N, [N1 | Ns], [N1 | Ns1]) :-
 
 bestff([ (_, _/_/FF) | _], FF).      % First node - best FF
 
-bestff([], 99999).                   % No nodes - FF = "infinite"
+bestff([], 99999).                   % No nodes - FF = infinite
 
 
 min(X, Y, X) :-
