@@ -471,35 +471,22 @@ Pi0,Pi9,Pi10,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8 %12
 % --------------------------------------------------------------
 % some special "moves" that are mapped to longer move sequences
 % --------------------------------------------------------------
+
+% step 3 Third layer edges and corners
+% Left
+% red = front face - left
 mov(sp1,X,Y) :-
-move_sequence([], X, Y).
-  %move_sequence([-f, +d, +f, -d, -l, -d, +l], X, Y).
+  move_sequence([-r, -b, -r, -r, +b, +r], X, Y).
+% Right
+% red = front face - left
 mov(sp2,X,Y) :-
-  move_sequence([+f, -d, -f, +d, -r, +d, +r], X, Y).
-mov(sp3,X,Y) :-
-  move_sequence([-b, +r, -d, -r, +d, +b], X, Y).
-mov(sp4,X,Y) :-
-  move_sequence([-b, -d, +r, +d, -r, +b], X, Y).
-mov(sp5,X,Y) :-
-  move_sequence([-b, +r, -d, -r, +d, +b, +f, -d, -l, +d, +l, -f], X, Y).
-mov(sp6,X,Y) :-
-  move_sequence([-l, -l, -u, -d, -d, +l, +r, +f, +f, -l, -r, +u, -l, -l], X, Y).
-mov(sp7,X,Y) :-
-  move_sequence([-l, -l, -u, +l, +r, +f, +f, -l, -r, -d, -d, +u, -l, -l], X, Y).
-mov(sp8,X,Y) :-
-  move_sequence([-l, -l, +u, +u, -b, -b, +u, +r, +r, +f, +f, +r, +r, +f, +f, +r, +r, +f, +f, -u, -b, -b, +u, +u, -l, -l], X, Y).
-mov(sp9,X,Y) :-
-  move_sequence([-r, -d, -l, +d, +r, -d, +l, +d], X, Y).
-mov(sp10,X,Y) :-
-  move_sequence([-d, -l, +d, -r, -d, +l, +d, +r], X, Y).
-mov(sp11,X,Y) :-
-  move_sequence([+l, -b, -b, +f, -l, -f, +l, +f, -l, -f, +l, +f, -l, -f, +l, -b, -b, -l], X, Y).
-mov(sp12,X,Y) :-
-  move_sequence([-b, +r, -d, -r, +d, +r, -d, -r, +d, +r, -d, -r, +d, +b], X, Y).
-mov(sp13,X,Y) :-
-  move_sequence([+f, +u, -f, -u, +f, +u, -f, -u], X, Y).
-mov(sp14,X,Y) :-
-  move_sequence([+u, +f, -u, -f, +u, +f, -u, -f], X, Y).
+  move_sequence([+r, +g, +r, +r, -g, -r], X, Y).
+
+
+% step 5 Top star
+% red = front face - left
+% TODO %%%%%%%%%%%%%%%%%%%%%%%
+
 % --------------------------------------------------------------
 % these helpers call the actual rotations
 % --------------------------------------------------------------
@@ -709,33 +696,6 @@ and(9, [g, w, pr, t, h, r, pi, l, gr, o, y, b]).
 and(10, [g, w, pr, t, h, r, pi, l, gr, o, y, b]).
 
 
-%and(2, [r, d, f, t]).
-%and(3, [r, d, f, t]).
-%and(4, [r, d, f, t]).
-%and(5, [f, r, d, t]).
-%and(6, [r, d, f, t]).
-%and(7, [r, d, f, t]).
-%and(8, [r, d, f, t]).
-%and(9, [u, t]).
-%and(10, [f, d, r, sp1, sp2]).
-%and(11, [sp1, sp2]).
-%and(12, [t]).
-%and(13, [f, d, r, sp1, sp2]).
-%and(14, [sp1,sp2]).
-%and(15, [t]).
-%and(16, [f, d, r, sp1, sp2]).
-%and(17, [sp1,sp2]).
-%and(18, [t]).
-%and(19, [f, d, r, sp1, sp2]).
-%and(20, [sp1,sp2]).
-%and(21, [t, sp3, sp4, sp5]).
-%and(22, [t, sp3, sp4, sp5]).
-%and(23, [t, sp3, sp4, sp5]).
-%and(24, [t, sp3, sp4, sp5]).
-%and(25, [t, u, sp6, sp7, sp8]).
-%and(26, [t, u, sp6, sp7, sp8]).
-%and(27, [t, u, sp6, sp7, sp8]).
-%and(28, [t, u, sp9, sp10, sp11, sp12, sp13, sp14]).
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
   and(Stage, Movelist),
