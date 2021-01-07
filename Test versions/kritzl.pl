@@ -88,7 +88,7 @@ mov(l,
     ),
     cube(
         U1,BLU6,BLU7,BLU8,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,U1,U2,U3,F11, % Front
+        F1,F2,F3,F4,F5,F6,F7,U2,U3,U4,F11, % Front
         L9,L10,L1,L2,L3,L4,L5,L6,L7,L8,L11, % Left
         R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
         FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,F8,F9,F10,FLD11, % Front left down
@@ -331,10 +331,10 @@ move_sequence([Move|Othermoves], X, Z) :-
 % strategy: solve the cube in stages
 % stages 1-4: put the upper slice edge pieces (two-colored) in place
 % stages 5-8: put the upper slice corner pieces (three-colored) in place
-% stage 9: turn the cube so that the "F" face center and the upper
-% slice "F" face pieces are on the same (front) face
+% stage 9: turn the cube so that the 'F' face center and the upper
+% slice 'F' face pieces are on the same (front) face
 % stages 10-20: put the middle slice corner pieces (two-colored) in place
-% stages 21-24: form a one-color "cross" on the "D" face with bottom slice
+% stages 21-24: form a one-color "cross" on the 'D' face with bottom slice
 % (two-colored) edge pieces
 % stages 25-27: put the bottom slice edge pieces (two-colored) in place
 % stage 28: put the bottom slice corner pieces in place
@@ -344,35 +344,35 @@ move_sequence([Move|Othermoves], X, Z) :-
 % ----------------------------------------------------------------------
 get_goal(1, cube(
     %1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11
-    "U", _ ,"U", _ ,"U", _ ,"U", _ ,"U", _ ,"U", % Up / weiss
-    "F", _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Front / dunkel gruen
-     _ , _ , _ , _ , _ , _ , _ , _ ,"L", _ , _ , % Left / violett
-     _ , _ ,"R", _ , _ , _ , _ , _ , _ , _ , _ , % Right / rot
+    'U', _ ,'U', _ ,'U', _ ,'U', _ ,'U', _ ,'U', % Up / weiss
+    'F', _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Front / dunkel gruen
+     _ , _ , _ , _ , _ , _ , _ , _ ,'L', _ , _ , % Left / violett
+     _ , _ ,'R', _ , _ , _ , _ , _ , _ , _ , _ , % Right / rot
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Front left down / hell blau
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Front right down / braun
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Down / grau
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Back / hell gruen
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Back left down / orange
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Back right down / rosa
-     _ , _ , _ , _ ,"BLU", _ , _ , _ , _ , _ , _ , % Back left up / gelb
-     _ , _ , _ , _ , _ , _ ,"BRU", _ , _ , _ , _ ) % Back right up / dunkel blau
+     _ , _ , _ , _ ,'BLU', _ , _ , _ , _ , _ , _ , % Back left up / gelb
+     _ , _ , _ , _ , _ , _ ,'BRU', _ , _ , _ , _ ) % Back right up / dunkel blau
     ).
 
 % White star
 get_goal(2, cube(
     %1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11
-    "U","U","U","U","U","U","U","U","U","U","U", % Up / weiss
-    "F","F", _ , _ , _ , _ , _ , _ , _ ,"F", _ , % Front / dunkel gruen
-     _ , _ , _ , _ , _ , _ , _ ,"L","L","L", _ , % Left / violett
-     _ ,"R","R","R", _ , _ , _ , _ , _ , _ , _ , % Right / rot
+    'U','U','U','U','U','U','U','U','U','U','U', % Up / weiss
+    'F','F', _ , _ , _ , _ , _ , _ , _ ,'F', _ , % Front / dunkel gruen
+     _ , _ , _ , _ , _ , _ , _ ,'L','L','L', _ , % Left / violett
+     _ ,'R','R','R', _ , _ , _ , _ , _ , _ , _ , % Right / rot
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Front left down / hell blau
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Front right down / braun
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Down / grau
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Back / hell gruen
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Back left down / orange
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Back right down / rosa
-     _ , _ , _ ,"BLU","BLU","BLU", _ , _ , _ , _ , _ , % Back left up / gelb
-     _ , _ , _ , _ , _ ,"BRU","BRU","BRU", _ , _ , _ ) % Back right up / dunkel blau
+     _ , _ , _ ,'BLU','BLU','BLU', _ , _ , _ , _ , _ , % Back left up / gelb
+     _ , _ , _ , _ , _ ,'BRU','BRU','BRU', _ , _ , _ ) % Back right up / dunkel blau
     ).
 
 % Turn cube upside-down
@@ -382,41 +382,24 @@ get_goal(3, cube(
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Front / hellblau
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Left / braun
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Right / orange
-     _ , _ , _ ,"F","F","F", _ , _ , _ , _ , _ , % Front left down / dunkelgruen
-     _ , _ , _ , _ , _ ,"L","L","L", _ , _ , _ , % Front right down / violett
-    "U","U","U","U","U","U","U","U","U","U","U", % Down / weiss
-    "BRU","BRU", _ , _ , _ , _ , _ , _ , _ ,"BRU", _ , % Back / dunkelblau
-     _ , _ , _ , _ , _ , _ , _ ,"R","R","R", _ , % Back left down / rot
-     _ ,"BLU","BLU","BLU", _ , _ , _ , _ , _ , _ , _ , % Back right down / gelb
+     _ , _ , _ ,'F','F','F', _ , _ , _ , _ , _ , % Front left down / dunkelgruen
+     _ , _ , _ , _ , _ ,'L','L','L', _ , _ , _ , % Front right down / violett
+    'U','U','U','U','U','U','U','U','U','U','U', % Down / weiss
+    'BRU','BRU', _ , _ , _ , _ , _ , _ , _ ,'BRU', _ , % Back / dunkelblau
+     _ , _ , _ , _ , _ , _ , _ ,'R','R','R', _ , % Back left down / rot
+     _ ,'BLU','BLU','BLU', _ , _ , _ , _ , _ , _ , _ , % Back right down / gelb
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Back left up / rosa
      _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ ) % Back right up / hellgruen
     ).
 
-% edge pieces 2nd layer
-get_goal(4, cube(
-    %1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 , 9 , 10, 11
-     _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Up / grau
-     _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Front / hellblau
-     _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Left / braun
-     _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Right / orange
-     _ , _ ,"F","F","F","F","F", _ , _ , _ , _ , % Front left down / dunkelgruen
-     _ , _ , _ , _ ,"L","L","L","L","L", _ , _ , % Front right down / violett
-    "U","U","U","U","U","U","U","U","U","U","U", % Down / weiss
-    "BRU","BRU","BRU", _ , _ , _ , _ , _ ,"BRU","BRU", _ , % Back / dunkelblau
-     "R", _ , _ , _ , _ , _ ,"R","R","R","R", _ , % Back left down / rot
-     "BLU","BLU","BLU","BLU","BLU", _ , _ , _ , _ , _ , _ , % Back right down / gelb
-     _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , % Back left up / rosa
-     _ , _ , _ , _ , _ , _ , _ , _ , _ , _ , _ ) % Back right up / hellgruen
-    ).
 
 % --------------------------------------------------------------
 % the search space is narrowed by listing all allowed rotations
 % for each stage separately
 % --------------------------------------------------------------
-cand(1, [ f, r, l, u, rd, ld, t, v]).
-cand(2, [ f, r, l, u, rd, ld, t, v, sp1, sp2, sp3, sp4]).
-cand(3, [ f, r, l, u, rd, ld, t, v, sp1, sp2, sp3, sp4]).
-cand(4, [ f, r, l, u, rd, ld, t, v, sp1, sp2, sp3, sp4]).
+cand(1, [f, r, l, u, rd, ld, t, v, sp1, sp2, sp3]).
+cand(2, [f, r, l, u, rd, ld, t, v, sp1, sp2, sp3]).
+cand(3, [f, r, l, u, rd, ld, t, v, sp1, sp2, sp3]).
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
     cand(Stage, Movelist),
@@ -461,11 +444,14 @@ get_move(Stage, -Move, State, Stagegoal) :-
 get_stage(Stage, Newstage) :-
     Newstage is Stage + 1.
 % the cube should be finished after stage 28, so we stop here.
-stage([],5,_).
+stage([],2,_).
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage
 stage(Movelist,Currentstage,Cubestate) :-
     get_goal(Currentstage,Targetstate),
+    write("Stage = "),
+    write(Currentstage),
+    nl,
     rotate(Currentstage,Stagemoves,Cubestate,Targetstate),
     reverse(Stagemoves,Newmoves),
     move_sequence(Newmoves,Cubestate,Newstate),
