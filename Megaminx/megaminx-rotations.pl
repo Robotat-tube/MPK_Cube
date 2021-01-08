@@ -710,7 +710,7 @@ conflict([-Previous|_], +This) :- This=Previous.
 % also, maximum moves in the direction is 2 (cw) or 1 (ccw)
 % (other can be reached with rotation to the other direction)
 conflict([-Previous|_], -This) :- This=Previous.
-conflict([+Previous|[+Previous|_]],+This) :- This=Previous.
+conflict([+Previous|_],+This) :- This=Previous.
 % ---------------------------------------------------------------
 % rotate performs the BFS search from given cube state to get the
 % the solution (a move list) for the defined stage.

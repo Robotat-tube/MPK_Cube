@@ -2,277 +2,306 @@
 
 % rotate "front" slice
 mov(f,
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    ),
-    cube(
-        L1,L2,U3,U4,U5,U6,U7,U8,U9,L10,U11, % Up
-        F9,F10,F1,F2,F3,F4,F5,F6,F7,F8,F11, % Front
-        FLD1,FLD2,L3,L4,L5,L6,L7,L8,L9,FLD10,L11, % Left
-        U1,U2,R3,R4,R5,R6,R7,R8,R9,U10,R11, % Right
-        FRD1,FRD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FRD10,FLD11, % Front left down
-        R1,R2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,R10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    )
+cube(
+G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10, %1
+W0,W1,W2,W3,W4,W5,W6,W7,W8,W9,W10, %2
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,Pr6,Pr7,Pr8,Pr9,Pr10, %3
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10, %6
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,Y10, %10
+B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10, %11
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+),
+cube(
+G0,G1,G2,G3,G4,R4,R5,R6,G8,G9,G10, %1
+% ----------------********-------
+W0,W9,W10,W1,W2,W3,W4,W5,W6,W7,W8, %2
+%************************************
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,G5,G6,G7,Pr9,Pr10, %3
+% ----------------------********---------
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,B5,B6,B7,R7,R8,R9,R10, %6
+% ----------********---------
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Pr6,Pr7,Pr8,Y8,Y9,Y10, %10
+% -------------************---------
+B0,B1,B2,B3,B4,Y5,Y6,Y7,B8,B9,B10, %11
+% -------------********---------
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+)
 ).
 
 % rotate "right" slice
 mov(r,
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    ),
-
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,F2,F3,F4,U11, % Up
-        F1,FRD2,FRD3,FRD4,F5,F6,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R9,R10,R1,R2,R3,R4,R5,R6,R7,R8,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,BRD6,BRD7,BRD8,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRU4,BRU5,BRU6,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,U8,U9,U10,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    )
+cube(
+G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10, %1
+W0,W1,W2,W3,W4,W5,W6,W7,W8,W9,W10, %2
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,Pr6,Pr7,Pr8,Pr9,Pr10, %3
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10, %6
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,Y10, %10
+B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10, %11
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+),
+cube(
+G0,G1,G2,G3,G4,R4,R5,R6,G8,G9,G10, %1
+% ----------------********-------
+W0,W9,W10,W1,W2,W3,W4,W5,W6,W7,W8, %2
+%************************************
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,G5,G6,G7,Pr9,Pr10, %3
+% ----------------------********---------
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,B5,B6,B7,R7,R8,R9,R10, %6
+% ----------********---------
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Pr6,Pr7,Pr8,Y8,Y9,Y10, %10
+% -------------************---------
+B0,B1,B2,B3,B4,Y5,Y6,Y7,B8,B9,B10, %11
+% -------------********---------
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+)
 ).
 
 % rotate "left" slice
 mov(l,
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    ),
-    cube(
-        U1,BLU6,BLU7,BLU8,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,U2,U3,U4,F11, % Front
-        L9,L10,L1,L2,L3,L4,L5,L6,L7,L8,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,F8,F9,F10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,FLD8,FLD9,FLD10,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLD4,BLD5,BLD6,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    )
+cube(
+G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10, %1
+W0,W1,W2,W3,W4,W5,W6,W7,W8,W9,W10, %2
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,Pr6,Pr7,Pr8,Pr9,Pr10, %3
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10, %6
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,Y10, %10
+B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10, %11
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+),
+cube(
+G0,G1,G2,G3,G4,R4,R5,R6,G8,G9,G10, %1
+% ----------------********-------
+W0,W9,W10,W1,W2,W3,W4,W5,W6,W7,W8, %2
+%************************************
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,G5,G6,G7,Pr9,Pr10, %3
+% ----------------------********---------
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,B5,B6,B7,R7,R8,R9,R10, %6
+% ----------********---------
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Pr6,Pr7,Pr8,Y8,Y9,Y10, %10
+% -------------************---------
+B0,B1,B2,B3,B4,Y5,Y6,Y7,B8,B9,B10, %11
+% -------------********---------
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+)
 ).
 
 % rotate "up" slice
 mov(u,
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    ),
-    cube(
-        U9,U10,U1,U2,U3,U4,U5,U6,U7,U8,U11, % Up
-        R3,R4,F3,F4,F5,F6,F7,F8,F9,R2,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,F10,F1,F2,L11, % Left
-        R1,BRU6,BRU7,BRU8,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,L8,L9,L10,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BLU4,BLU5,BLU6,BRU9,BRU10,BRU11 % Back right up
-    )
+cube(
+G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10, %1
+W0,W1,W2,W3,W4,W5,W6,W7,W8,W9,W10, %2
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,Pr6,Pr7,Pr8,Pr9,Pr10, %3
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10, %6
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,Y10, %10
+B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10, %11
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+),
+cube(
+G0,G1,G2,G3,G4,R4,R5,R6,G8,G9,G10, %1
+% ----------------********-------
+W0,W9,W10,W1,W2,W3,W4,W5,W6,W7,W8, %2
+%************************************
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,G5,G6,G7,Pr9,Pr10, %3
+% ----------------------********---------
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,B5,B6,B7,R7,R8,R9,R10, %6
+% ----------********---------
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Pr6,Pr7,Pr8,Y8,Y9,Y10, %10
+% -------------************---------
+B0,B1,B2,B3,B4,Y5,Y6,Y7,B8,B9,B10, %11
+% -------------********---------
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+)
 ).
 
 % rotate "FrontRightDown" slice
 mov(rd,
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    ),
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,FLD2,FLD3,FLD4,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,F4,F5,F6,R11, % Right
-        FLD1,D6,D7,D8,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD9,FRD10,FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,BRD4,BRD5,BRD6,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,R8,R9,R10,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    )
+cube(
+G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10, %1
+W0,W1,W2,W3,W4,W5,W6,W7,W8,W9,W10, %2
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,Pr6,Pr7,Pr8,Pr9,Pr10, %3
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10, %6
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,Y10, %10
+B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10, %11
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+),
+cube(
+G0,G1,G2,G3,G4,R4,R5,R6,G8,G9,G10, %1
+% ----------------********-------
+W0,W9,W10,W1,W2,W3,W4,W5,W6,W7,W8, %2
+%************************************
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,G5,G6,G7,Pr9,Pr10, %3
+% ----------------------********---------
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,B5,B6,B7,R7,R8,R9,R10, %6
+% ----------********---------
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Pr6,Pr7,Pr8,Y8,Y9,Y10, %10
+% -------------************---------
+B0,B1,B2,B3,B4,Y5,Y6,Y7,B8,B9,B10, %11
+% -------------********---------
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+)
 ).
 
 % rotate "FrontLeftDown" slice
 mov(ld,
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    ),
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,L2,L3,L4,F9,F10,F11, % Front
-        L1,BLD6,BLD7,BLD8,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD9,FLD10,FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,F6,F7,F8,FRD11, % Front right down
-
-        D1,D2,D3,FRD8,FRD9,FRD10,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,D4,D5,D6,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    )
+cube(
+G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10, %1
+W0,W1,W2,W3,W4,W5,W6,W7,W8,W9,W10, %2
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,Pr6,Pr7,Pr8,Pr9,Pr10, %3
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10, %6
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,Y10, %10
+B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10, %11
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+),
+cube(
+G0,G1,G2,G3,G4,R4,R5,R6,G8,G9,G10, %1
+% ----------------********-------
+W0,W9,W10,W1,W2,W3,W4,W5,W6,W7,W8, %2
+%************************************
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,G5,G6,G7,Pr9,Pr10, %3
+% ----------------------********---------
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,B5,B6,B7,R7,R8,R9,R10, %6
+% ----------********---------
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Pr6,Pr7,Pr8,Y8,Y9,Y10, %10
+% -------------************---------
+B0,B1,B2,B3,B4,Y5,Y6,Y7,B8,B9,B10, %11
+% -------------********---------
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+)
 ).
 
 % turn the cube upside-down
 mov(t,
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    ),
-
-    cube(
-        D5,D6,D7,D8,D9,D10,D1,D2,D3,D4,D11, % Up
-        FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD1,FLD2,FLD3,FLD4,FLD11, % Front
-        FRD9,FRD10,FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD11, % Left
-        BLD7,BLD8,BLD9,BLD10,BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD11, % Right
-        F7,F8,F9,F10,F1,F2,F3,F4,F5,F6,F11, % Front left down
-        L3,L4,L5,L6,L7,L8,L9,L10,L1,L2,L11, % Front right down
-
-        U7,U8,U9,U10,U1,U2,U3,U4,U5,U6,U11, % Down
-        BRU7,BRU8,BRU9,BRU10,BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU11, % Back
-        R5,R6,R7,R8,R9,R10,R1,R2,R3,R4,R11, % Back left down
-        BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU1,BLU2,BLU11, % Back right down
-        BRD9,BRD10,BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD11, % Back left up
-        B5,B6,B7,B8,B9,B10,B1,B2,B3,B4,B11 % Back right up
-    )
+cube(
+G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10, %1
+W0,W1,W2,W3,W4,W5,W6,W7,W8,W9,W10, %2
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,Pr6,Pr7,Pr8,Pr9,Pr10, %3
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10, %6
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,Y10, %10
+B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10, %11
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+),
+cube(
+G0,G1,G2,G3,G4,R4,R5,R6,G8,G9,G10, %1
+% ----------------********-------
+W0,W9,W10,W1,W2,W3,W4,W5,W6,W7,W8, %2
+%************************************
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,G5,G6,G7,Pr9,Pr10, %3
+% ----------------------********---------
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,B5,B6,B7,R7,R8,R9,R10, %6
+% ----------********---------
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Pr6,Pr7,Pr8,Y8,Y9,Y10, %10
+% -------------************---------
+B0,B1,B2,B3,B4,Y5,Y6,Y7,B8,B9,B10, %11
+% -------------********---------
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+)
 ).
 
 % turn the cube around vertical axis
 mov(v,
-    cube(
-        U1,U2,U3,U4,U5,U6,U7,U8,U9,U10,U11, % Up
-        F1,F2,F3,F4,F5,F6,F7,F8,F9,F10,F11, % Front
-        L1,L2,L3,L4,L5,L6,L7,L8,L9,L10,L11, % Left
-        R1,R2,R3,R4,R5,R6,R7,R8,R9,R10,R11, % Right
-        FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD7,FLD8,FLD9,FLD10,FLD11, % Front left down
-        FRD1,FRD2,FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD11, % Front right down
-
-        D1,D2,D3,D4,D5,D6,D7,D8,D9,D10,D11, % Down
-        B1,B2,B3,B4,B5,B6,B7,B8,B9,B10,B11, % Back
-        BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD9,BLD10,BLD11, % Back left down
-        BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD7,BRD8,BRD9,BRD10,BRD11, % Back right down
-        BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU9,BLU10,BLU11, % Back left up
-        BRU1,BRU2,BRU3,BRU4,BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU11 % Back right up
-    ),
-
-    cube(
-        U9,U10,U1,U2,U3,U4,U5,U6,U7,U8,U11, % Up
-        R3,R4,R5,R6,R7,R8,R9,R10,R1,R2,R11, % Front
-        F3,F4,F5,F6,F7,F8,F9,F10,F1,F2,F11, % Left
-        BRU5,BRU6,BRU7,BRU8,BRU9,BRU10,BRU1,BRU2,BRU3,BRU4,BRU11, % Right
-        FRD3,FRD4,FRD5,FRD6,FRD7,FRD8,FRD9,FRD10,FRD1,FRD2,FRD11, % Front left down
-        BRD7,BRD8,BRD9,BRD10,BRD1,BRD2,BRD3,BRD4,BRD5,BRD6,BRD11, % Front right down
-
-        D3,D4,D5,D6,D7,D8,D9,D10,D1,D2,D11, % Down
-        BLD9,BLD10,BLD1,BLD2,BLD3,BLD4,BLD5,BLD6,BLD7,BLD8,BLD11, % Back
-        FLD7,FLD8,FLD9,FLD10,FLD1,FLD2,FLD3,FLD4,FLD5,FLD6,FLD11, % Back left down
-        B9,B10,B1,B2,B3,B4,B5,B6,B7,B8,B11, % Back right down
-        L5,L6,L7,L8,L9,L10,L1,L2,L3,L4,L11, % Back left up
-        BLU9,BLU10,BLU1,BLU2,BLU3,BLU4,BLU5,BLU6,BLU7,BLU8,BLU11 % Back right up
-    )
+cube(
+G0,G1,G2,G3,G4,G5,G6,G7,G8,G9,G10, %1
+W0,W1,W2,W3,W4,W5,W6,W7,W8,W9,W10, %2
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,Pr6,Pr7,Pr8,Pr9,Pr10, %3
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,R4,R5,R6,R7,R8,R9,R10, %6
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Y5,Y6,Y7,Y8,Y9,Y10, %10
+B0,B1,B2,B3,B4,B5,B6,B7,B8,B9,B10, %11
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+),
+cube(
+G0,G1,G2,G3,G4,R4,R5,R6,G8,G9,G10, %1
+% ----------------********-------
+W0,W9,W10,W1,W2,W3,W4,W5,W6,W7,W8, %2
+%************************************
+Pr0,Pr1,Pr2,Pr3,Pr4,Pr5,G5,G6,G7,Pr9,Pr10, %3
+% ----------------------********---------
+T0,T1,T2,T3,T4,T5,T6,T7,T8,T9,T10, %4
+H0,H1,H2,H3,H4,H5,H6,H7,H8,H9,H10, %5
+R0,R1,R2,R3,B5,B6,B7,R7,R8,R9,R10, %6
+% ----------********---------
+L0,L1,L2,L3,L4,L5,L6,L7,L8,L9,L10, %7
+Gr0,Gr1,Gr2,Gr3,Gr4,Gr5,Gr6,Gr7,Gr8,Gr9,Gr10, %8
+O0,O1,O2,O3,O4,O5,O6,O7,O8,O9,O10, %9
+Y0,Y1,Y2,Y3,Y4,Pr6,Pr7,Pr8,Y8,Y9,Y10, %10
+% -------------************---------
+B0,B1,B2,B3,B4,Y5,Y6,Y7,B8,B9,B10, %11
+% -------------********---------
+Pi0,Pi1,Pi2,Pi3,Pi4,Pi5,Pi6,Pi7,Pi8,Pi9,Pi10 %12
+)
 ).
 
 % --------------------------------------------------------------
@@ -317,16 +346,16 @@ mov(sp11,X,Y) :-
 % --------------------------------------------------------------
 % clockwise move
 move(+Move, OldState, NewState) :-
-    mov(Move, OldState, NewState).
+mov(Move, OldState, NewState).
 % counterclockwise move
 move(-Move, OldState, NewState) :-
-    mov(Move, NewState, OldState).
+mov(Move, NewState, OldState).
 % empty move list
 move_sequence([],X,X).
 % longer sequence
 move_sequence([Move|Othermoves], X, Z) :-
-    move(Move,X,Y),
-    move_sequence(Othermoves,Y,Z).
+move(Move,X,Y),
+move_sequence(Othermoves,Y,Z).
 % ----------------------------------------------------------------------
 % strategy: solve the cube in stages
 % stages 1-4: put the upper slice edge pieces (two-colored) in place
@@ -393,18 +422,19 @@ get_goal(3, cube(
     ).
 
 
+
 % --------------------------------------------------------------
 % the search space is narrowed by listing all allowed rotations
 % for each stage separately
 % --------------------------------------------------------------
-cand(1, [f, r, l, u, rd, ld, t, v, sp1, sp2, sp3]).
-cand(2, [f, r, l, u, rd, ld, t, v, sp1, sp2, sp3]).
-cand(3, [f, r, l, u, rd, ld, t, v, sp1, sp2, sp3]).
+and(1, [f, r, l, u, rd, ld, t, v,sp1]).
+and(2, [f, r, l, u, rd, ld, t, v,sp1]).
+and(3, [f, r, l, u, rd, ld, t, v,sp1]).
+
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
-    cand(Stage, Movelist),
-    nth1(_,Movelist,Move).
-% nht1 gibt true zurück, wenn move dass _ Element von move List ist
+and(Stage, Movelist),
+nth1(_,Movelist,Move).
 % --------------------------------------------------------------
 % these helpers reject some unwise move candidates
 % check whether the proposed move should be tried or not
@@ -427,37 +457,34 @@ rotate(_,[],State,State).
 % State is the current state of the cube
 % Criteria contains the list of the pieces to be positioned in this stage
 rotate(Stage, Moves, State, Stagegoal) :-
-    rotate(Stage, Priormoves, State, Nextstate),
-    get_move(Stage, Nextmove, Nextstate, Stagegoal),
-    not(conflict(Priormoves,Nextmove)),
-    append([Nextmove], Priormoves, Moves).
+rotate(Stage, Priormoves, State, Nextstate),
+get_move(Stage, Nextmove, Nextstate, Stagegoal),
+not(conflict(Priormoves,Nextmove)),
+append([Nextmove], Priormoves, Moves).
 get_move(Stage, +Move, State, Stagegoal) :-
-    get_candidate(Stage, Move),
-    mov(Move, State, Stagegoal).
+get_candidate(Stage, Move),
+mov(Move, State, Stagegoal).
 get_move(Stage, -Move, State, Stagegoal) :-
-    get_candidate(Stage, Move),
-    mov(Move, Stagegoal, State).
+get_candidate(Stage, Move),
+mov(Move, Stagegoal, State).
 % --------------------------------------------------------------
 % Here are the topmost predicates that collect the answer
 % --------------------------------------------------------------
 % updates the stage
 get_stage(Stage, Newstage) :-
-    Newstage is Stage + 1.
+Newstage is Stage + 1.
 % the cube should be finished after stage 28, so we stop here.
 stage([],2,_).
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage
 stage(Movelist,Currentstage,Cubestate) :-
-    get_goal(Currentstage,Targetstate),
-    write("Stage = "),
-    write(Currentstage),
-    nl,
-    rotate(Currentstage,Stagemoves,Cubestate,Targetstate),
-    reverse(Stagemoves,Newmoves),
-    move_sequence(Newmoves,Cubestate,Newstate),
-    get_stage(Currentstage,Newstage),
-    stage(Newlist,Newstage,Newstate),
-    append(Newmoves,Newlist,Movelist).
+get_goal(Currentstage,Targetstate),
+rotate(Currentstage,Stagemoves,Cubestate,Targetstate),
+reverse(Stagemoves,Newmoves),
+move_sequence(Newmoves,Cubestate,Newstate),
+get_stage(Currentstage,Newstage),
+stage(Newlist,Newstage,Newstate),
+append(Newmoves,Newlist,Movelist).
 % a little UI helper
 solve(Movelist,Cube_state) :-
-    stage(Movelist, 1, Cube_state).
+stage(Movelist, 1, Cube_state).
