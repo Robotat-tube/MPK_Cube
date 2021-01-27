@@ -432,19 +432,38 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
+get_goal(2, megaminx(
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
+
+_   ,_   ,_   ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,_   ,_   ,"R" , %Front
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
+
+_   ,"H" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
+).
+
 get_goal(30, megaminx(
-"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,
-"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,
-"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,
-"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,
-"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,
-"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr",
-"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,
-"Pi","Pi","Pi","Pi","Pi","Pi","Pi","Pi","Pi","Pi","Pi",
-"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,
-"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,
-"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,
-"Gr","Gr","Gr","Gr","Gr","Gr","Gr","Gr","Gr","Gr","Gr")
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Left
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Front
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Right
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back Right
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr", %Back Left
+"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" , %Down Left
+"Pi","Pi","Pi","Pi","Pi","Pi","Pi","Pi","Pi","Pi","Pi", %Down Right
+"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" , %Back Down Right
+"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" , %Back
+"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" , %Back Down Left
+"Gr","Gr","Gr","Gr","Gr","Gr","Gr","Gr","Gr","Gr","Gr") %Down
 ).
 
 % --------------------------------------------------------------
@@ -509,7 +528,9 @@ get_stage(Stage, Newstage) :-
   Newstage is Stage + 1.
 
 % the cube should be finished after stage 28, so we stop here.
-stage([],2,_).
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+stage([],3,_). %%%%%%%%%%%%%%%%%%% change this for testing
+                                % example: 3 means go to goal 2
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage
 stage(Movelist,Currentstage,Cubestate) :-

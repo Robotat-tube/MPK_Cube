@@ -6,7 +6,7 @@ testcase :-
 statistics(walltime, [TimeSinceStart | [TimeSinceLastCall]]),
     %%% operation to be executed %%%
     move_sequence(
-    [-r,-l,-u, -r_ud, -r_v],
+      [-r,-l,-u, -r_ud, -r_v, +l, -dr, +u],
     megaminx(
     "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,
     "G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,
