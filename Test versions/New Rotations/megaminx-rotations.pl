@@ -292,7 +292,7 @@ Y0  ,Y1  ,Y2  ,Y3  ,Y4  ,Y5  ,Y6  ,Y7  ,Y8  ,Y9  ,Y10 , %Back Right
 Pr0 ,Pr1 ,Pr2 ,Pr3 ,Pr4 ,Pr5 ,Pr6 ,Pr7 ,Pr8 ,Pr9 ,Pr10, %Back Left
 
 H0  ,H1  ,H2  ,H3  ,H4  ,H5  ,H6  ,H7  ,H8  ,H9  ,H10 , %Down Left
-Pi0 ,Pi1 ,Pi2 ,Pi3 ,Pi4 ,Pi5 ,Pi6 ,Pi7 ,Pi8 ,Pi9 ,Pi10,  %Down Right
+Pi0 ,Pi1 ,Pi2 ,Pi3 ,Pi4 ,Pi5 ,Pi6 ,Pi7 ,Pi8 ,Pi9 ,Pi10, %Down Right
 L0  ,L1  ,L2  ,L3  ,L4  ,L5  ,L6  ,L7  ,L8  ,L9  ,L10 , %Back Down Right
 O0  ,O1  ,O2  ,O3  ,O4  ,O5  ,O6  ,O7  ,O8  ,O9  ,O10 , %Back
 T0  ,T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10 , %Back Down Left
@@ -301,21 +301,21 @@ Gr0 ,Gr1 ,Gr2 ,Gr3 ,Gr4 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10 %Down
 ),
 megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-W0  ,W1  ,W2  ,W3  ,W4  ,W5  ,W6  ,W7  ,W8  ,W9  ,W10 , %Up
+W0  ,W9  ,W10 ,W1  ,W2  ,W3  ,W4  ,W5  ,W6  ,W7  ,W8  , %Up
 
-R0  ,R1  ,R2  ,R3  ,R4  ,R5  ,R6  ,R7  ,R8  ,R9  ,R10 , %Front
-B0  ,B1  ,B2  ,B3  ,B4  ,B5  ,B6  ,B7  ,B8  ,B9  ,B10 , %Right
-Y0  ,Y1  ,Y2  ,Y3  ,Y4  ,Y5  ,Y6  ,Y7  ,Y8  ,Y9  ,Y10 , %Back Right
-Pr0 ,Pr1 ,Pr2 ,Pr3 ,Pr4 ,Pr5 ,Pr6 ,Pr7 ,Pr8 ,Pr9 ,Pr10, %Back Left
-G0  ,G1  ,G2  ,G3  ,G4  ,G5  ,G6  ,G7  ,G8  ,G9  ,G10 , %Left
+R0  ,R1  ,R2  ,R3  ,R4  ,R5  ,R6  ,R7  ,R8  ,R9  ,R10 , %Left
+B0  ,B1  ,B2  ,B3  ,B4  ,B5  ,B6  ,B7  ,B8  ,B9  ,B10 , %Front
+Y0  ,Y1  ,Y2  ,Y3  ,Y4  ,Y5  ,Y6  ,Y7  ,Y8  ,Y9  ,Y10 , %Right
+Pr0 ,Pr1 ,Pr2 ,Pr3 ,Pr4 ,Pr5 ,Pr6 ,Pr7 ,Pr8 ,Pr9 ,Pr10, %Back Right
+G0  ,G1  ,G2  ,G3  ,G4  ,G5  ,G6  ,G7  ,G8  ,G9  ,G10 , %Back Left
 
-Pi0 ,Pi1 ,Pi2 ,Pi3 ,Pi4 ,Pi5 ,Pi6 ,Pi7 ,Pi8 ,Pi9 ,Pi10,  %Down Right
-L0  ,L1  ,L2  ,L3  ,L4  ,L5  ,L6  ,L7  ,L8  ,L9  ,L10 , %Back Down Right
-O0  ,O1  ,O2  ,O3  ,O4  ,O5  ,O6  ,O7  ,O8  ,O9  ,O10 , %Back
-T0  ,T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10 , %Back Down Left
-H0  ,H1  ,H2  ,H3  ,H4  ,H5  ,H6  ,H7  ,H8  ,H9  ,H10 , %Down Left
+Pi0 ,Pi1 ,Pi2 ,Pi3 ,Pi4 ,Pi5 ,Pi6 ,Pi7 ,Pi8 ,Pi9 ,Pi10, %Down Left
+L0  ,L1  ,L2  ,L3  ,L4  ,L5  ,L6  ,L7  ,L8  ,L9  ,L10 , %Down Right
+O0  ,O1  ,O2  ,O3  ,O4  ,O5  ,O6  ,O7  ,O8  ,O9  ,O10 , %Back Down Right
+T0  ,T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10 , %Back
+H0  ,H1  ,H2  ,H3  ,H4  ,H5  ,H6  ,H7  ,H8  ,H9  ,H10 , %Back Down Left
 
-Gr0 ,Gr1 ,Gr2 ,Gr3 ,Gr4 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10  %Down
+Gr0 ,Gr3 ,Gr4 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10,Gr1 ,Gr2   %Down
 )
 ).
 
@@ -415,11 +415,11 @@ get_goal(1, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
 
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
+"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" , %Front
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
 
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
@@ -434,13 +434,13 @@ get_goal(2, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
 
-_   ,_   ,_   ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,_   ,_   ,"R" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
+"G" ,_   ,_   ,"W" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,_   ,_   ,"R" , %Front
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
 
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
+_   ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
@@ -451,13 +451,13 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 
 get_goal(3, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
+"W" ,"W" ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
 
-_   ,_   ,_   ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
+"G" ,_   ,_   ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Front
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
 
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
@@ -470,13 +470,13 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 
 get_goal(4, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
+"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" , %Up
 
-_   ,_   ,_   ,_ ,_   ,_   ,_   ,_   ,_   ,_     ,"Pr"  , %Left
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr"  , %Left
 "G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Back Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Right
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Back Left
 
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
@@ -489,34 +489,15 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 
 get_goal(5, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
+"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" , %Up
 
-_   ,_   ,_   ,_ ,_   ,_   ,_   ,_   ,_   ,_     ,"Pr"  , %Left
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,"G"  ,_   ,_   ,"G" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(5, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr"  , %Left
+"Pr",_   ,_   ,"W" ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Left
 "G" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" ,_   ,_   ,"G" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Back Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Right
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Back Left
 
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
+_   ,"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
@@ -524,35 +505,17 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
+
 
 get_goal(6, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
+"W" ,"W" ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" , %Up
 
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr"  , %Left
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G"  ,"G" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(7, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr" ,%Front
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G"  ,"G" ,%Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Left
+"Pr","Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr","Pr", %Left
+"G" ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" ,"G" , %Front
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Right
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Back Left
 
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
@@ -565,32 +528,13 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 
 get_goal(7, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
+"W" ,"W" ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" , %Up
 
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr" ,%Front
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G"  ,"G" ,%Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(8, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,_    ,"Y", %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr" ,_   ,_    ,"Pr" ,%Front
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" ,%Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"R"  ,"R" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,_    ,"B" , %Back Left
+"Pr","Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr","Pr", %Left
+"G" ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" ,"G" , %Front
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Right
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Back Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y", %Back Left
 
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
@@ -600,178 +544,6 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
-
-get_goal(9, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,_    ,"Y", %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Pr" ,"Pr" ,%Front
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" ,%Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"R"  ,"R" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,_    ,"B" , %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(10, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,_    ,"B" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,_    ,"Y" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Pr" ,"Pr", %Right
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"R"  ,"R" , %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(11, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,_    ,"B" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y"  ,_   ,_    ,"Y" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Pr" ,"Pr", %Right
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"R"  ,"R" , %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(12, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,_    ,"B" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Y"  ,"Y" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Pr" ,"Pr", %Right
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"R"  ,"R" , %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(13, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"R"  ,"R" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,_    ,"B" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Y"  ,"Y" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Pr" ,"Pr", %Back Right
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" , %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(14, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"R"  ,"R" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B"    ,_   ,_    ,"B" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Y"  ,"Y" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Pr" ,"Pr", %Back Right
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" , %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(15, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"R"  ,"R" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"B"    ,"B" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Y"  ,"Y" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Pr" ,"Pr", %Back Right
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" , %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(16, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" , %Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"R"  ,"R" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"B"  ,"B" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Y"  ,"Y" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Pr" ,"Pr", %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
-get_goal(17, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
-
-"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"G"  ,"G" , %Left
-"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_ ,"R"  ,"R" , %Front
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"B"  ,"B" , %Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Y"  ,"Y" , %Back Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_    ,_   ,"Pr" ,"Pr", %Back Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
-
-_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
-).
-
 
 get_goal(18, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
@@ -876,7 +648,7 @@ get_stage(Stage, Newstage) :-
 
 % the cube should be finished after stage 28, so we stop here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-stage([],19,_). %%%%%%%%%%%%%%%%%%% change this for testing
+stage([],7,_). %%%%%%%%%%%%%%%%%%% change this for testing
                                 % example: 3 means go to goal 2
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage
@@ -888,6 +660,9 @@ stage(Movelist,Currentstage,Cubestate) :-
   rotate(Currentstage,Stagemoves,Cubestate,Targetstate),
   reverse(Stagemoves,Newmoves),
   move_sequence(Newmoves,Cubestate,Newstate),
+  write("New Moves = "),
+  write(Newmoves),
+  nl,
   get_stage(Currentstage,Newstage),
   stage(Newlist,Newstage,Newstate),
   append(Newmoves,Newlist,Movelist).
