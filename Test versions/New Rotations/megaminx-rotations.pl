@@ -373,6 +373,14 @@ mov(sp1,X,Y) :-
 mov(sp2,X,Y) :-
   move_sequence([+dl, +l, -dl, -l, -dl, -f, +dl, +f], X, Y).
 
+% sp100
+mov(sp100,X,Y) :-
+  move_sequence([+dl,+l,-dl,-l], X, Y).
+
+% sp110
+mov(sp110,X,Y) :-
+  move_sequence([+l,-dl,-l,+dl,+dl, +l, +dl,-l], X, Y).
+
 
 % step 5 Top star
 % red = front face - left
@@ -528,6 +536,45 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
+
+get_goal(6, megaminx(
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
+
+"G" ,_   ,_   ,"R" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" ,_   ,_   ,"R" , %Front
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
+
+_   ,"W" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
+).
+
+get_goal(6, megaminx(
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
+
+"G" ,_   ,_   ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,_   ,_   ,"R" , %Front
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
+
+_   ,"W" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
+).
+
 
 get_goal(7, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
@@ -736,8 +783,6 @@ get_goal(17, megaminx(
 "Pr","Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr","Pr", %Back Right
 "G" ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" ,"G" , %Back Left
 
-
-
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
@@ -815,7 +860,7 @@ cand(4, [u, r, f, dr, dl, l, r_v, r_ud]).
 cand(5, [u, r, f, dr, dl, l, r_v, r_ud]).
 %%%%%%%%
 cand(6, [u, r, f, dr, dl, l, r_v, r_ud]).
-cand(7, [sp1]).
+cand(7, [sp1, sp100, sp110]).
 cand(8, [r_v]).
 cand(9, [u, r, f, dr, dl, l, r_v, r_ud]).
 cand(10, [sp1]).

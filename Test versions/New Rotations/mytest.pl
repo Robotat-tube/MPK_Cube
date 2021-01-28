@@ -11,7 +11,7 @@ statistics(walltime, [TimeSinceStart | [TimeSinceLastCall]]),
       write("--------------------------Megaminx wird verdreht-------------------------------------"),
       nl,
       move_sequence(
-        [-u, +l, -r_v, -dr, +u], %NOTATION BZGL. ROTATIONEN EINHALTEN 
+        [-u, +l, -r_v, -dr], %NOTATION BZGL. ROTATIONEN EINHALTEN 
         %NOTATION BZGL. NUMMERIERUNG FELDER EINHALTEN
         megaminx(
         "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,
