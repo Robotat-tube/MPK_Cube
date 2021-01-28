@@ -410,9 +410,89 @@ move_sequence([Move|Othermoves], X, Z) :-
 % ----------------------------------------------------------------------
 
 
+
 % checked on 3rd Jan 2021
 get_goal(1, megaminx(
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+% 0 ,1   ,5   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"W" ,_   ,"W" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Front
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Right
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
+).
+
+
+get_goal(2, megaminx(
+% 0 ,1   ,5   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"W" ,_   ,"W" ,_   ,"W" ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Front
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Right
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
+).
+
+get_goal(3, megaminx(
+% 0 ,1   ,5   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,_   ,_   ,_   , %Up
+
+"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Front
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
+).
+
+get_goal(4, megaminx(
+% 0 ,1   ,5   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,_   , %Up
+
+"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Front
+"B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
+"Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
+"Pr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pr", %Back Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Left
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Right
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
+
+_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
+).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% checked on 3rd Jan 2021
+get_goal(5, megaminx(
+% 0 ,1   ,5   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
 
 "G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
@@ -430,7 +510,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(2, megaminx(
+get_goal(6, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
 
@@ -449,11 +529,11 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(3, megaminx(
+get_goal(7, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,"W" ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" , %Up
 
-"G" ,_   ,_   ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
+"G" ,"G" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"G" , %Left
 "R" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"R" ,"R" , %Front
 "B" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"B" , %Right
 "Y" ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Y" , %Back Right
@@ -468,7 +548,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(4, megaminx(
+get_goal(8, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" , %Up
 
@@ -487,7 +567,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(5, megaminx(
+get_goal(9, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" , %Up
 
@@ -507,7 +587,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
 
-get_goal(6, megaminx(
+get_goal(10, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,"W" ,"W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" , %Up
 
@@ -526,7 +606,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(7, megaminx(
+get_goal(11, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 
@@ -546,7 +626,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(8, megaminx(
+get_goal(12, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 
@@ -566,7 +646,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(9, megaminx(
+get_goal(13, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,"W" ,"W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 
@@ -586,7 +666,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(10, megaminx(
+get_goal(14, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 
@@ -606,7 +686,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(11, megaminx(
+get_goal(15, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,_   ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 
@@ -626,7 +706,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(12, megaminx(
+get_goal(16, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,"W" ,"W" ,_   ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 
@@ -646,7 +726,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(13, megaminx(
+get_goal(17, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 
@@ -667,7 +747,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(14, megaminx(
+get_goal(18, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,_   ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 
@@ -686,7 +766,7 @@ _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Back Down Left
 _   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ) %Down
 ).
 
-get_goal(15, megaminx(
+get_goal(19, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 
@@ -730,22 +810,27 @@ get_goal(30, megaminx(
 % --------------------------------------------------------------
 cand(1, [u, r, f, dr, dl, l, r_v, r_ud]).
 cand(2, [u, r, f, dr, dl, l, r_v, r_ud]).
-cand(3, [sp1]).
-cand(4, [r_v]).
+cand(3, [u, r, f, dr, dl, l, r_v, r_ud]).
+cand(4, [u, r, f, dr, dl, l, r_v, r_ud]).
 cand(5, [u, r, f, dr, dl, l, r_v, r_ud]).
-cand(6, [sp1]).
-cand(7, [r_v]).
-cand(8, [u, r, f, dr, dl, l, r_v, r_ud]).
-cand(9, [sp1]).
-cand(10,[r_v]).
-cand(11,[u, r, f, dr, dl, l, r_v, r_ud]).
-cand(12,[sp1]).
-cand(13,[r_v]).
-cand(14,[u, r, f, dr, dl, l, r_v, r_ud]).
-cand(15,[sp1]).
-cand(16,[r_v]).
-cand(17,[u, r, f, dr, dl, l, r_v, r_ud]).
+%%%%%%%%
+cand(6, [u, r, f, dr, dl, l, r_v, r_ud]).
+cand(7, [sp1]).
+cand(8, [r_v]).
+cand(9, [u, r, f, dr, dl, l, r_v, r_ud]).
+cand(10, [sp1]).
+cand(11, [r_v]).
+cand(12, [u, r, f, dr, dl, l, r_v, r_ud]).
+cand(13, [sp1]).
+cand(14,[r_v]).
+cand(15,[u, r, f, dr, dl, l, r_v, r_ud]).
+cand(16,[sp1]).
+cand(17,[r_v]).
 cand(18,[u, r, f, dr, dl, l, r_v, r_ud]).
+cand(19,[sp1]).
+cand(20,[r_v]).
+cand(21,[u, r, f, dr, dl, l, r_v, r_ud]).
+cand(22,[u, r, f, dr, dl, l, r_v, r_ud]).
 
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
@@ -792,7 +877,7 @@ get_stage(Stage, Newstage) :-
 
 % the cube should be finished after stage 28, so we stop here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-stage([],16,_). %%%%%%%%%%%%%%%%%%% change this for testing
+stage([],20,_). %%%%%%%%%%%%%%%%%%% change this for testing
                                 % example: 3 means go to goal 2
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage
