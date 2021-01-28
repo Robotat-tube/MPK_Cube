@@ -365,15 +365,13 @@ W0  ,W1  ,W2  ,W3  ,W4  ,W5  ,W6  ,W7  ,W8  ,W9  ,W10   %Up
 % some special "moves" that are mapped to longer move sequences
 % --------------------------------------------------------------
 
-% step 3 Third layer edges and corners
-% Left
-% red = front face - left
+% sp1
 mov(sp1,X,Y) :-
-  move_sequence([-r, -b, -r, -r, +b, +r], X, Y).
-% Right
-% red = front face - left
+  move_sequence([+l, +dl, -l], X, Y).
+
+% sp2
 mov(sp2,X,Y) :-
-  move_sequence([+r, +g, +r, +r, -g, -r], X, Y).
+  move_sequence([+dl, +l, -dl, -l, -dl, -f, +dl, +f], X, Y).
 
 
 % step 5 Top star
