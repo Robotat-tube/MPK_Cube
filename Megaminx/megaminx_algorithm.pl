@@ -123,10 +123,12 @@ cand(94, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4
 cand(95, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
 cand(96, [sp8, sp9]).
 cand(97, [r_v]).
-cand(98, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
+%cand(98, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
+cand(98, [sp8,u,r_v]).
 cand(99, [sp8, sp9]).
 cand(100, [r_v]).
-cand(101, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
+%cand(101, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
+cand(101, [sp5,sp8,r]).
 cand(102, [sp8, sp9]).
 cand(103, [r_v]).
 
@@ -245,7 +247,7 @@ get_stage(Stage, Newstage) :-
 
 % the cube should be finished after stage 28, so we stop here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-stage([],98,_). %%%%%%%%%%%%%%%%%%% change this for testing
+stage([],104,_). %%%%%%%%%%%%%%%%%%% change this for testing
                                 % example: 3 means go to goal 2
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage

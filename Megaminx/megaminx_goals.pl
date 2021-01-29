@@ -1994,6 +1994,25 @@ get_goal(99, megaminx(
 "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
 ).
 
+get_goal(100, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"H" ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Left
+"T" ,_   ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   , %Front
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   ,_   , %Right
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Back Right 
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   ,_   , %Back Left
+
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Down Left
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Down Right
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back Down Right
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
 get_goal(101, megaminx( 
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"O" , %Up
