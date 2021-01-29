@@ -10,14 +10,8 @@ mov(sp1,X,Y) :-
 mov(sp2,X,Y) :-
   move_sequence([+dl, +l, -dl, -l, -dl, -f, +dl, +f], X, Y).
 
-% sp100
-mov(sp100,X,Y) :-
-  move_sequence([+dl,+l,-dl,-l], X, Y).
 
-% sp110
-mov(sp110,X,Y) :-
-  move_sequence([+l,-dl,-l,+dl,+dl, +l, +dl,-l], X, Y).
-  
+
 
 %%%%%%%%%%%%%%%%%%%%% UP %%%%%%%%%%%%%%%%%%%%%%%%%%%
 mov(u,

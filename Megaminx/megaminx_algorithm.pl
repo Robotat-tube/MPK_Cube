@@ -27,8 +27,19 @@ cand(17, [r_v]).
 cand(18, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
 cand(19, [sp1]).
 cand(20, [r_v]).
-cand(21, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
-cand(22, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+cand(21, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]). %soll da sp2 auch dazu?
+cand(22, [sp2]).
+cand(23, [r_v]).
+cand(24, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]). %soll da sp2 auch dazu?
+cand(25, [sp2]).
+cand(26, [r_v]).
+cand(27, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]). %soll da sp2 auch dazu?
+cand(28, [sp2]).
+cand(29, [r_v]).
+cand(30, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]). %soll da sp2 auch dazu?
+cand(31, [sp2]).
+
+
 
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
@@ -144,7 +155,7 @@ get_stage(Stage, Newstage) :-
 
 % the cube should be finished after stage 28, so we stop here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-stage([],21,_). %%%%%%%%%%%%%%%%%%% change this for testing
+stage([],32,_). %%%%%%%%%%%%%%%%%%% change this for testing
                                 % example: 3 means go to goal 2
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage
