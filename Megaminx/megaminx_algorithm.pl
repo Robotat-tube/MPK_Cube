@@ -6,29 +6,29 @@ set_prolog_stack(local,  limit(2 000 000 000)).
 % the search space is narrowed by listing all allowed rotations
 % for each stage separately
 % --------------------------------------------------------------
-cand(1,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
-cand(2,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
-cand(3,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
-cand(4,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
-cand(5,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
+cand(1,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(2,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(3,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(4,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(5,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
 %%%%%%%%
-cand(6,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
+cand(6,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
 cand(7,  [sp1, sp100, sp110]).
 cand(8,  [r_v]).
-cand(9,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
+cand(9,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
 cand(10, [sp1]).
 cand(11, [r_v]).
-cand(12, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
+cand(12, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
 cand(13, [sp1]).
 cand(14, [r_v]).
-cand(15, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
+cand(15, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
 cand(16, [sp1]).
 cand(17, [r_v]).
-cand(18, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
+cand(18, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
 cand(19, [sp1]).
 cand(20, [r_v]).
-cand(21, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
-cand(22, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v]).
+cand(21, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(22, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
 
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
