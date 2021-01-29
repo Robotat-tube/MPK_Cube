@@ -1469,6 +1469,173 @@ get_goal(73, megaminx(
 "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
 ).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACHTUNG NOTATIONSFEHLER IN DER PPT   %%
+%% KEINE AENDERUNGEN IM STATE           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+get_goal(74, megaminx(  
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,_   ,_   ,"L" ,_   ,"L" ,_   ,_   ,_   ,_   , %Left
+"Pi",_   ,_   ,_   ,"Pi",_   ,"Pi",_   ,_   ,_   ,_   , %Front
+"H" ,_   ,_   ,_   ,"H" ,_   ,"H" ,_   ,_   ,_   ,_   , %Right
+"T" ,_   ,_   ,_   ,"T" ,_   ,"T" ,_   ,_   ,_   ,_   , %Back Right
+"O" ,_   ,_   ,_   ,"O" ,_   ,"O" ,_   ,_   ,_   ,_   , %Back Left
+
+"B" ,_   ,"B" ,_   ,"B" ,"B" ,"B" ,"B" ,"B" ,_   ,"B" , %Down Left
+"R" ,_   ,"R" ,_   ,"R" ,"R" ,"R" ,"R" ,"R" ,_   ,"R" , %Down Right
+"G" ,_   ,"G" ,_   ,"G" ,"G" ,"G" ,"G" ,"G" ,_   ,"G" , %Back Down Right 
+"Pr",_   ,"Pr",_   ,"Pr","Pr","Pr","Pr","Pr",_   ,"Pr", %Back
+"Y" ,_   ,"Y" ,_   ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,_   ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(75, megaminx(  
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,_   ,_   ,"L" ,_   ,"L" ,_   ,_   ,_   ,_   , %Left
+"Pi",_   ,_   ,_   ,"Pi",_   ,"Pi",_   ,_   ,_   ,_   , %Front
+"H" ,_   ,_   ,_   ,"H" ,_   ,"H" ,_   ,_   ,_   ,_   , %Right
+"T" ,_   ,_   ,_   ,"T" ,_   ,"T" ,_   ,_   ,_   ,_   , %Back Right
+"O" ,_   ,_   ,_   ,"O" ,_   ,"O" ,_   ,_   ,_   ,_   , %Back Left
+
+"B" ,_   ,"B" ,_   ,"B" ,"B" ,"B" ,"B" ,"B" ,_   ,"B" , %Down Left
+"R" ,_   ,"R" ,_   ,"R" ,"R" ,"R" ,"R" ,"R" ,_   ,"R" , %Down Right
+"G" ,_   ,"G" ,_   ,"G" ,"G" ,"G" ,"G" ,"G" ,_   ,"G" , %Back Down Right 
+"Pr",_   ,"Pr",_   ,"Pr","Pr","Pr","Pr","Pr",_   ,"Pr", %Back
+"Y" ,_   ,"Y" ,_   ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,_   ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(76, megaminx(  
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,_   ,_   ,"L" ,_   ,"L" ,_   ,_   ,_   ,_   , %Left
+"Pi",_   ,_   ,_   ,"Pi",_   ,"Pi",_   ,_   ,_   ,_   , %Front
+"H" ,_   ,_   ,_   ,"H" ,_   ,"H" ,_   ,_   ,_   ,_   , %Right
+"T" ,_   ,_   ,_   ,"T" ,_   ,"T" ,_   ,_   ,_   ,_   , %Back Right
+"O" ,_   ,_   ,_   ,"O" ,_   ,"O" ,_   ,_   ,_   ,_   , %Back Left
+
+"B" ,_   ,"B" ,_   ,"B" ,"B" ,"B" ,"B" ,"B" ,_   ,"B" , %Down Left
+"R" ,_   ,"R" ,_   ,"R" ,"R" ,"R" ,"R" ,"R" ,_   ,"R" , %Down Right
+"G" ,_   ,"G" ,_   ,"G" ,"G" ,"G" ,"G" ,"G" ,_   ,"G" , %Back Down Right 
+"Pr",_   ,"Pr",_   ,"Pr","Pr","Pr","Pr","Pr",_   ,"Pr", %Back
+"Y" ,_   ,"Y" ,_   ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,_   ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(77, megaminx(  
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,_   ,_   ,"L" ,_   ,"L" ,_   ,_   ,_   ,_   , %Left
+"Pi",_   ,_   ,_   ,"Pi",_   ,"Pi",_   ,_   ,_   ,_   , %Front
+"H" ,_   ,_   ,_   ,"H" ,_   ,"H" ,_   ,_   ,_   ,_   , %Right
+"T" ,_   ,_   ,_   ,"T" ,_   ,"T" ,_   ,_   ,_   ,_   , %Back Right
+"O" ,_   ,_   ,_   ,"O" ,_   ,"O" ,_   ,_   ,_   ,_   , %Back Left
+
+"B" ,_   ,"B" ,_   ,"B" ,"B" ,"B" ,"B" ,"B" ,_   ,"B" , %Down Left
+"R" ,_   ,"R" ,_   ,"R" ,"R" ,"R" ,"R" ,"R" ,_   ,"R" , %Down Right
+"G" ,_   ,"G" ,_   ,"G" ,"G" ,"G" ,"G" ,"G" ,_   ,"G" , %Back Down Right 
+"Pr",_   ,"Pr",_   ,"Pr","Pr","Pr","Pr","Pr",_   ,"Pr", %Back
+"Y" ,_   ,"Y" ,_   ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,_   ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(78, megaminx(  
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,_   ,_   ,"L" ,_   ,"L" ,_   ,_   ,_   ,_   , %Left
+"Pi",_   ,_   ,_   ,"Pi",_   ,"Pi",_   ,_   ,_   ,_   , %Front
+"H" ,_   ,_   ,_   ,"H" ,_   ,"H" ,_   ,_   ,_   ,_   , %Right
+"T" ,_   ,_   ,_   ,"T" ,_   ,"T" ,_   ,_   ,_   ,_   , %Back Right
+"O" ,_   ,_   ,_   ,"O" ,_   ,"O" ,_   ,_   ,_   ,_   , %Back Left
+
+"B" ,_   ,"B" ,_   ,"B" ,"B" ,"B" ,"B" ,"B" ,_   ,"B" , %Down Left
+"R" ,_   ,"R" ,_   ,"R" ,"R" ,"R" ,"R" ,"R" ,_   ,"R" , %Down Right
+"G" ,_   ,"G" ,_   ,"G" ,"G" ,"G" ,"G" ,"G" ,_   ,"G" , %Back Down Right 
+"Pr",_   ,"Pr",_   ,"Pr","Pr","Pr","Pr","Pr",_   ,"Pr", %Back
+"Y" ,_   ,"Y" ,_   ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,_   ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ACHTUNG NOTATIONSFEHLER IN DER PPT   %%
+%% AENDERUNGEN BEGINNEN WIEDER          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+get_goal(79, megaminx(  %Foliensatz 4
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,_   ,_   ,"L" ,_   ,"L" ,_   ,_   ,_   ,_   , %Left
+"Pi",_   ,_   ,_   ,"Pi",_   ,"Pi",_   ,_   ,_   ,_   , %Front
+"H" ,_   ,_   ,_   ,"H" ,_   ,"H" ,_   ,_   ,_   ,_   , %Right
+"T" ,_   ,_   ,_   ,"T" ,_   ,"T" ,_   ,_   ,_   ,_   , %Back Right
+"O" ,_   ,_   ,_   ,"O" ,_   ,"O" ,_   ,_   ,_   ,_   , %Back Left
+
+"B" ,_   ,"B" ,_   ,"B" ,"B" ,"B" ,"B" ,"B" ,_   ,"B" , %Down Left
+"R" ,_   ,"R" ,_   ,"R" ,"R" ,"R" ,"R" ,"R" ,_   ,"R" , %Down Right
+"G" ,_   ,"G" ,_   ,"G" ,"G" ,"G" ,"G" ,"G" ,_   ,"G" , %Back Down Right 
+"Pr",_   ,"Pr",_   ,"Pr","Pr","Pr","Pr","Pr",_   ,"Pr", %Back
+"Y" ,_   ,"Y" ,_   ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,_   ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+
+
+
+get_goal(80, megaminx(  %Foliensatz 4
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pi",_   , %Up
+
+"L" ,_   ,_   ,_   ,"L" ,_   ,"L" ,_   ,_   ,_   ,_   , %Left
+"Pi","R" ,_   ,_   ,"Pi",_   ,"Pi",_   ,_   ,_   ,_   , %Front
+"H" ,_   ,_   ,_   ,"H" ,_   ,"H" ,_   ,_   ,"H"   ,_   , %Right
+"T" ,_   ,_   ,_   ,"T" ,_   ,"T" ,_   ,_   ,_   ,_   , %Back Right
+"O" ,_   ,_   ,_   ,"O" ,_   ,"O" ,_   ,_   ,_   ,_   , %Back Left
+
+"B" ,_   ,"B" ,_   ,"B" ,"B" ,"B" ,"B" ,"B" ,_   ,"B" , %Down Left
+"R" ,_   ,"R" ,_   ,"R" ,"R" ,"R" ,"R" ,"R" ,_   ,"R" , %Down Right
+"G" ,_   ,"G" ,_   ,"G" ,"G" ,"G" ,"G" ,"G" ,_   ,"G" , %Back Down Right 
+"Pr",_   ,"Pr",_   ,"Pr","Pr","Pr","Pr","Pr",_   ,"Pr", %Back
+"Y" ,_   ,"Y" ,_   ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,_   ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+
+get_goal(81, megaminx(  %Foliensatz 4
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,_   ,_   ,"L" ,_   ,"L" ,_   ,_   ,_   ,_   , %Left
+"Pi",_   ,_   ,"Pi","Pi",_   ,"Pi",_   ,_   ,_   ,_   , %Front
+"H" ,_   ,_   ,_   ,"H" ,_   ,"H" ,"H" ,_   ,_   ,_   , %Right
+"T" ,_   ,_   ,_   ,"T" ,_   ,"T" ,_   ,_   ,_   ,_   , %Back Right
+"O" ,_   ,_   ,_   ,"O" ,_   ,"O" ,_   ,_   ,_   ,_   , %Back Left
+
+"B" ,_   ,"B" ,_   ,"B" ,"B" ,"B" ,"B" ,"B" ,_   ,"B" , %Down Left
+"R" ,"R" ,"R" ,_   ,"R" ,"R" ,"R" ,"R" ,"R" ,_   ,"R" , %Down Right
+"G" ,_   ,"G" ,_   ,"G" ,"G" ,"G" ,"G" ,"G" ,_   ,"G" , %Back Down Right 
+"Pr",_   ,"Pr",_   ,"Pr","Pr","Pr","Pr","Pr",_   ,"Pr", %Back
+"Y" ,_   ,"Y" ,_   ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,_   ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
 
 
 

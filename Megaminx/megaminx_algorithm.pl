@@ -68,12 +68,37 @@ cand(58, [sp3]).
 cand(59, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 cand(60, [sp4]).
 cand(61, [r_v]).
+
+
+%Notationsfehler - keine aenderungen
+cand(62, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(63, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(64, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(65, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(65, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(67, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+%Notationsfehler - aenderungen starten
+
 cand(68, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 cand(69, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 cand(70, [sp3]).
 cand(71, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 cand(72, [sp4]).
 cand(73, [r_v]).
+
+%Notationsfehler - keine aenderungen
+cand(74, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(75, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(76, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(77, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(78, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+%Notationsfehler - aenderungen starten
+
+cand(79, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(80, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
+cand(81, [sp5, sp6, sp7]).
+
+
 
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
@@ -189,7 +214,7 @@ get_stage(Stage, Newstage) :-
 
 % the cube should be finished after stage 28, so we stop here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-stage([],74,_). %%%%%%%%%%%%%%%%%%% change this for testing
+stage([],82,_). %%%%%%%%%%%%%%%%%%% change this for testing
                                 % example: 3 means go to goal 2
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage
