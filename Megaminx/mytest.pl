@@ -12,8 +12,8 @@ statistics(walltime, [TimeSinceStart | [TimeSinceLastCall]]),
       nl,
       move_sequence(
         %[-u, +l, -r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f], %NOTATION BZGL. ROTATIONEN EINHALTEN 
-        [-u, +l, -r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f,
-          -u, +l, -r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f ], %NOTATION BZGL. ROTATIONEN EINHALTEN 
+        %[-u, +l, -r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f,-u, +l, -r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f ], %NOTATION BZGL. ROTATIONEN EINHALTEN 
+        [-u, +l, -r_v, +r_ud, +r, -dr, +u, +f,-r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr,  +r, -dr, +f, -dl, +r, +u, +f, -dl, -dl, -r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f,-u, +l, -dr, +u, +f ], %NOTATION BZGL. ROTATIONEN EINHALTEN 
         %NOTATION BZGL. NUMMERIERUNG FELDER EINHALTEN
         megaminx(
         "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,
