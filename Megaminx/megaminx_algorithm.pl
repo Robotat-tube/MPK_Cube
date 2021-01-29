@@ -8,9 +8,11 @@ set_prolog_stack(local,  limit(2 000 000 000)).
 % --------------------------------------------------------------
 cand(1,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
 cand(2,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
-cand(3,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+%cand(3,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+cand(3, [u,l,f,r]). %%SPEED UP
 cand(4,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
-cand(5,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+%cand(5,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+cand(5, [u,br]). %%SPEED UP
 %%%%%%%%
 cand(6,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
 cand(7,  [sp1, sp100, sp110]).
@@ -18,7 +20,8 @@ cand(8,  [r_v]).
 cand(9,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
 cand(10, [sp1]).
 cand(11, [r_v]).
-cand(12, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+%cand(12, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+cand(12, [l, bl, bdl]). %%SPEED UP
 cand(13, [sp1]).
 cand(14, [r_v]).
 cand(15, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
@@ -51,7 +54,8 @@ cand(41, [sp4]).
 cand(42, [r_v]).
 cand(43, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 cand(44, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
-cand(45, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+%cand(45, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(45, [u,l,sp2]). %%SPEED UP
 cand(46, [sp3]).
 cand(47, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 cand(48, [sp4]).
@@ -80,9 +84,11 @@ cand(67, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 %Notationsfehler - aenderungen starten
 
 cand(68, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
-cand(69, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+%cand(69, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(69, [u,f,l]). %%SPEED UP
 cand(70, [sp3]).
-cand(71, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+%cand(71, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+cand(71, [l,f,u]). %%SPEED UP
 cand(72, [sp4]).
 cand(73, [r_v]).
 
@@ -95,8 +101,7 @@ cand(78, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 %Notationsfehler - aenderungen starten
 
 cand(79, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
-%cand(80, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
-cand(80, [bdl,l,sp7])  %%SPEED UP 
+cand(80, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
 cand(81, [sp5, sp6, sp7]).
 cand(82, [r_v]).
 cand(83, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
@@ -110,7 +115,7 @@ cand(90, [sp5, sp6, sp7]).
 cand(91, [r_v]).
 cand(92, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
 cand(93, [sp5, sp6, sp7]).
-cand(94, [r_v]).
+cand(94, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
 
 
 
