@@ -6,29 +6,29 @@ set_prolog_stack(local,  limit(2 000 000 000)).
 % the search space is narrowed by listing all allowed rotations
 % for each stage separately
 % --------------------------------------------------------------
-cand(1,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
-cand(2,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
-cand(3,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
-cand(4,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
-cand(5,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(1,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
+cand(2,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
+cand(3,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
+cand(4,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
+cand(5,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
 %%%%%%%%
-cand(6,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(6,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
 cand(7,  [sp1, sp100, sp110]).
 cand(8,  [r_v]).
-cand(9,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(9,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
 cand(10, [sp1]).
 cand(11, [r_v]).
-cand(12, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(12, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
 cand(13, [sp1]).
 cand(14, [r_v]).
-cand(15, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(15, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
 cand(16, [sp1]).
 cand(17, [r_v]).
-cand(18, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(18, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
 cand(19, [sp1]).
 cand(20, [r_v]).
-cand(21, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
-cand(22, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud]).
+cand(21, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
+cand(22, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, sp1]).
 
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
@@ -58,22 +58,25 @@ megaminx(
 
   Gr0 ,Gr1 ,Gr2 ,Gr3 ,Gr4 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10 %Down
 )) :-
-  format("~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [W0  ,W1  ,W2  ,W3  ,W4  ,W5  ,W6  ,W7  ,W8  ,W9  ,W10]),
+  write("-------"),
+  nl,
+  format("Up:              ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [W0  ,W1  ,W2  ,W3  ,W4  ,W5  ,W6  ,W7  ,W8  ,W9  ,W10]),
 
-  format("~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [G0  ,G1  ,G2  ,G3  ,G4  ,G5  ,G6  ,G7  ,G8  ,G9  ,G10]),
-  format("~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [R0  ,R1  ,R2  ,R3  ,R4  ,R5  ,R6  ,R7  ,R8  ,R9  ,R10]),
-  format("~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [B0  ,B1  ,B2  ,B3  ,B4  ,B5  ,B6  ,B7  ,B8  ,B9  ,B10]),
-  format("~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [Y0  ,Y1  ,Y2  ,Y3  ,Y4  ,Y5  ,Y6  ,Y7  ,Y8  ,Y9  ,Y10]),
-  format("~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a~n", [Pr0 ,Pr1 ,Pr2 ,Pr3 ,Pr4 ,Pr5 ,Pr6 ,Pr7 ,Pr8 ,Pr9 ,Pr10]),
+  format("Left:            ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [G0  ,G1  ,G2  ,G3  ,G4  ,G5  ,G6  ,G7  ,G8  ,G9  ,G10]),
+  format("Front:           ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [R0  ,R1  ,R2  ,R3  ,R4  ,R5  ,R6  ,R7  ,R8  ,R9  ,R10]),
+  format("Right:           ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [B0  ,B1  ,B2  ,B3  ,B4  ,B5  ,B6  ,B7  ,B8  ,B9  ,B10]),
+  format("Back Right:      ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [Y0  ,Y1  ,Y2  ,Y3  ,Y4  ,Y5  ,Y6  ,Y7  ,Y8  ,Y9  ,Y10]),
+  format("Back Left:       ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a~n", [Pr0 ,Pr1 ,Pr2 ,Pr3 ,Pr4 ,Pr5 ,Pr6 ,Pr7 ,Pr8 ,Pr9 ,Pr10]),
 
-  format("~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [H0  ,H1  ,H2  ,H3  ,H4  ,H5  ,H6  ,H7  ,H8  ,H9  ,H10]),
-  format("~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a~n", [Pi0 ,Pi1 ,Pi2 ,Pi3 ,Pi4 ,Pi5 ,Pi6 ,Pi7 ,Pi8 ,Pi9 ,Pi10]),
-  format("~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [L0  ,L1  ,L2  ,L3  ,L4  ,L5  ,L6  ,L7  ,L8  ,L9  ,L10]),
-  format("~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [O0  ,O1  ,O2  ,O3  ,O4  ,O5  ,O6  ,O7  ,O8  ,O9  ,O10]),
-  format("~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [T0  ,T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10]),
+  format("Down Left:       ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [H0  ,H1  ,H2  ,H3  ,H4  ,H5  ,H6  ,H7  ,H8  ,H9  ,H10]),
+  format("Down Right:      ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a~n", [Pi0 ,Pi1 ,Pi2 ,Pi3 ,Pi4 ,Pi5 ,Pi6 ,Pi7 ,Pi8 ,Pi9 ,Pi10]),
+  format("Back Down Right: ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [L0  ,L1  ,L2  ,L3  ,L4  ,L5  ,L6  ,L7  ,L8  ,L9  ,L10]),
+  format("Back:            ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [O0  ,O1  ,O2  ,O3  ,O4  ,O5  ,O6  ,O7  ,O8  ,O9  ,O10]),
+  format("Back Down Left:  ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a   ~a~n", [T0  ,T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10]),
 
-  format("~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a~n", [Gr0 ,Gr1 ,Gr2 ,Gr3 ,Gr4 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10]),
-
+  format("Down:            ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a  ~a~n", [Gr0 ,Gr1 ,Gr2 ,Gr3 ,Gr4 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10]),
+  write("-------"),
+  nl,
   flush_output.
 
 
