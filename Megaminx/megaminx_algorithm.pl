@@ -95,8 +95,22 @@ cand(78, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 %Notationsfehler - aenderungen starten
 
 cand(79, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
-cand(80, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
+%cand(80, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
+cand(80, [bdl,l,sp7])  %%SPEED UP 
 cand(81, [sp5, sp6, sp7]).
+cand(82, [r_v]).
+cand(83, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
+cand(84, [sp5, sp6, sp7]).
+cand(85, [r_v]).
+cand(86, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
+cand(87, [sp5, sp6, sp7]).
+cand(88, [r_v]).
+cand(89, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
+cand(90, [sp5, sp6, sp7]).
+cand(91, [r_v]).
+cand(92, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
+cand(93, [sp5, sp6, sp7]).
+cand(94, [r_v]).
 
 
 
@@ -214,7 +228,7 @@ get_stage(Stage, Newstage) :-
 
 % the cube should be finished after stage 28, so we stop here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-stage([],82,_). %%%%%%%%%%%%%%%%%%% change this for testing
+stage([],95,_). %%%%%%%%%%%%%%%%%%% change this for testing
                                 % example: 3 means go to goal 2
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage
