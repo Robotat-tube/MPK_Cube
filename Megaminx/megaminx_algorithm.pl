@@ -38,8 +38,11 @@ cand(28, [sp2]).
 cand(29, [r_v]).
 cand(30, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]). %soll da sp2 auch dazu?
 cand(31, [sp2]).
-
-
+cand(32, [r_v]).
+cand(33, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]). %soll da sp2 auch dazu?
+cand(34, [sp2]).
+cand(35, [r_v]).
+cand(36, [r_ud]). 
 
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
@@ -155,7 +158,7 @@ get_stage(Stage, Newstage) :-
 
 % the cube should be finished after stage 28, so we stop here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-stage([],32,_). %%%%%%%%%%%%%%%%%%% change this for testing
+stage([],37,_). %%%%%%%%%%%%%%%%%%% change this for testing
                                 % example: 3 means go to goal 2
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage

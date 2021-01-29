@@ -10,6 +10,14 @@ mov(sp1,X,Y) :-
 mov(sp2,X,Y) :-
   move_sequence([+dl, +l, -dl, -l, -dl, -f, +dl, +f], X, Y).
 
+% sp3
+mov(sp3,X,Y) :-
+  move_sequence([-f, -r, -f, -f, +r, +f], X, Y).
+
+
+% sp4
+mov(sp4,X,Y) :-
+  move_sequence([+f, +l, +f, +f, -l, -f], X, Y).
 
 
 
