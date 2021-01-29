@@ -535,7 +535,7 @@ get_goal(112, megaminx(
 )  
 ).
 
-get_goal(120, megaminx(
+get_goal(120, megaminx( %End State number not accurate
 "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" , %Up
 "G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Left
 "R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Front
