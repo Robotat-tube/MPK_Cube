@@ -636,20 +636,20 @@ Gr0 ,Gr1 ,Gr2 ,Gr3 ,Gr4 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10  %Down
 ),
 megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-Gr0 ,Gr1 ,Gr2 ,Gr3 ,Gr4 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10, %Up
+Gr0 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10,Gr1 ,Gr2 ,Gr3 ,Gr4 , %Up
 
-Pi0 ,Pi1 ,Pi2 ,Pi3 ,Pi4 ,Pi5 ,Pi6 ,Pi7 ,Pi8 ,Pi9 ,Pi10,  %Left
-L0  ,L1  ,L2  ,L3  ,L4  ,L5  ,L6  ,L7  ,L8  ,L9  ,L10 , %Front
-O0  ,O1  ,O2  ,O3  ,O4  ,O5  ,O6  ,O7  ,O8  ,O9  ,O10 , %Right
-T0  ,T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10 , %Back Right
-H0  ,H1  ,H2  ,H3  ,H4  ,H5  ,H6  ,H7  ,H8  ,H9  ,H10 , %Back Left
+L0  ,L7  ,L8  ,L9  ,L10 ,L1  ,L2  ,L3  ,L4  ,L5  ,L6  , %Left
+Pi0 ,Pi7 ,Pi8 ,Pi9 ,Pi10,Pi1 ,Pi2 ,Pi3 ,Pi4 ,Pi5 ,Pi6 , %Front
+H0  ,H7  ,H8  ,H9  ,H10 ,H1  ,H2  ,H3  ,H4  ,H5  ,H6  , %Right
+T0  ,T7  ,T8  ,T9  ,T10 ,T1  ,T2  ,T3  ,T4  ,T5  ,T6  , %Back Right
+O0  ,O7  ,O8  ,O9  ,O10 ,O1  ,O2  ,O3  ,O4  ,O5  ,O6  , %Back Left
 
-B0  ,B1  ,B2  ,B3  ,B4  ,B5  ,B6  ,B7  ,B8  ,B9  ,B10 , %Down Left
-Y0  ,Y1  ,Y2  ,Y3  ,Y4  ,Y5  ,Y6  ,Y7  ,Y8  ,Y9  ,Y10 , %Down Right
-Pr0 ,Pr1 ,Pr2 ,Pr3 ,Pr4 ,Pr5 ,Pr6 ,Pr7 ,Pr8 ,Pr9 ,Pr10, %Back Down Right
-G0  ,G1  ,G2  ,G3  ,G4  ,G5  ,G6  ,G7  ,G8  ,G9  ,G10 , %Back
-R0  ,R1  ,R2  ,R3  ,R4  ,R5  ,R6  ,R7  ,R8  ,R9  ,R10 , %Back Down Left
+B0  ,B5  ,B6  ,B7  ,B8  ,B9  ,B10 ,B1  ,B2  ,B3  ,B4  , %Down Left
+R0  ,R5  ,R6  ,R7  ,R8  ,R9  ,R10 ,R1  ,R2  ,R3  ,R4  , %Down Right
+G0  ,G5  ,G6  ,G7  ,G8  ,G9  ,G10 ,G1  ,G2  ,G3  ,G4  , %Back Down Right
+Pr0 ,Pr5 ,Pr6 ,Pr7 ,Pr8 ,Pr9 ,Pr10,Pr1 ,Pr2 ,Pr3 ,Pr4 , %Back
+Y0  ,Y5  ,Y6  ,Y7  ,Y8  ,Y9  ,Y10 ,Y1  ,Y2  ,Y3  ,Y4  , %Back Down Left
 
-W0  ,W1  ,W2  ,W3  ,W4  ,W5  ,W6  ,W7  ,W8  ,W9  ,W10   %Up
+W0  ,W7  ,W8  ,W9  ,W10 ,W1  ,W2  ,W3  ,W4  ,W5  ,W6    %Down
 )
 ).
