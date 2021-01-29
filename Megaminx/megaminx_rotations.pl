@@ -31,6 +31,14 @@ mov(sp6,X,Y) :-
 mov(sp7,X,Y) :-
   move_sequence([+r, -u, -r, +u, +u, +r, +u, -r], X, Y).  
 
+% sp8
+mov(sp8,X,Y) :-
+  move_sequence([+u, +r, -u, -r, -u, -f, +u, +f], X, Y).  
+
+% sp9
+mov(sp9,X,Y) :-
+  move_sequence([-r, -f, +r, +u, +r, -u, -r, +f], X, Y).  
+
 
 
 %%%%%%%%%%%%%%%%%%%%% UP %%%%%%%%%%%%%%%%%%%%%%%%%%%

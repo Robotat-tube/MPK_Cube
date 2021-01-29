@@ -1877,27 +1877,180 @@ get_goal(94, megaminx(
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
 "Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
 
-"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   ,_   , %Left
-"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Front
-"Pi",_   ,_   ,"Pi","Pi","Pi","Pi","Pi" ,_   ,_   ,_   , %Right
-"H" ,_   ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   ,_   , %Back Right
-"T" ,_   ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   ,_   , %Black Left
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Left 
+"Pi",_   ,_   ,"Pi","Pi","Pi","Pi","Pi" ,_   ,_   ,_  , %Front
+"H" ,_   ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   ,_   , %Right
+"T" ,_   ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   ,_   , %Black Right
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   ,_   , %Back Left
 
-"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Down Left
-"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back Right
-"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Back Down Right
-"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Back
-"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr", %Back Down Left
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back Left
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Right
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Back Down Right
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr", %Back
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Down Down Left
 
 "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
 ).
 
 
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Arbeitspaket 5    %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+get_goal(95, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,"Pi",_   ,_   , %Up
+
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Left 
+"Pi",_   ,_   ,"Pi","Pi","Pi","Pi","Pi",_   ,_   ,_  , %Front
+"H" ,_   ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   ,"H", %Right
+"T" ,_   ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   ,_   , %Black Right
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   ,_   , %Back Left
+
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back Left
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Right
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Back Down Right
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr", %Back
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Down Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(96, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Left 
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   ,_   , %Front
+"H" ,_   ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Right
+"T" ,_   ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   ,_   , %Back Right
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   ,_   , %Back Left
+
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back Left
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Right
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Back Down Right
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Back
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(97, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   ,_   , %Left
+"H" ,_   ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Front
+"T" ,_   ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   ,_   , %Right
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   ,_   , %Back Right
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Back Left 
+
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Left
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Down Right
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Back Down Right
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(98, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"T" , %Up
+
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   ,_   , %Left
+"H" ,_   ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,"H" , %Front
+"T" ,_   ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   ,_   , %Right
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   ,_   , %Back Right
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Back Left 
+
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Left
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Down Right
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Back Down Right
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(99, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   ,_   , %Left
+"H" ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Front
+"T" ,_   ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   , %Right
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   ,_   , %Back Right
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Back Left 
+
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Left
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Down Right
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Back Down Right
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(101, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,"O" , %Up
+
+"H" ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Left
+"T" ,_   ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,"T" , %Front
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   ,_   , %Right
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Back Right 
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   ,_   , %Back Left
+
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Down Left
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Down Right
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back Down Right
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+get_goal(102, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"H" ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Left
+"T" ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   , %Front
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   , %Right
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Back Right 
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   ,_   , %Back Left
+
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Down Left
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Down Right
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back Down Right
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
 
 
+get_goal(103, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"T" ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   , %Left
+"O" ,_   ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   , %Front
+"L" ,_   ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   ,_   , %Right 
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   ,_   , %Back Right
+"H" ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Back Left
+
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Down Left
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Down Right
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Back Down Right
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Back 
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
 
 
 
