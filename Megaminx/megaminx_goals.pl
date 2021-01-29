@@ -2189,7 +2189,75 @@ get_goal(109, megaminx(
 "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
 ).
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTATIONS KORREKTUR      %%
+%%     von 109-112          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+get_goal(110, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   , %Left 
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   , %Front
+"H" ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Right
+"T" ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   , %Back Right
+"O" ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   , %Back Left
+
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Down Left
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Right
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Back Down Right 
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Back
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+
+get_goal(111, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   , %Left 
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   , %Front
+"H" ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Right
+"T" ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   , %Back Right
+"O" ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   , %Back Left
+
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Down Left
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Right
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Back Down Right 
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Back
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% NOTATIONS KORREKTUR ENDE %%
+%%     von 109-112          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+get_goal(112, megaminx( 
+% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+"Gr",_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   ,_   , %Up
+
+"L" ,_   ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,_   ,_   , %Left 
+"Pi",_   ,"Pi","Pi","Pi","Pi","Pi","Pi","Pi",_   ,_   , %Front
+"H" ,_   ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,_   ,_   , %Right
+"T" ,_   ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,_   ,_   , %Back Right
+"O" ,_   ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,_   ,_   , %Back Left
+
+"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Down Left
+"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Right
+"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Back Down Right 
+"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr" ,"Pr",%Back
+"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back Down Left
+
+"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
+).
 
 
 

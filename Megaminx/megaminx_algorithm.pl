@@ -8,11 +8,11 @@ set_prolog_stack(local,  limit(2 000 000 000)).
 % --------------------------------------------------------------
 cand(1,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
 cand(2,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
-%cand(3,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
-cand(3, [u,l,f,r]). %%SPEED UP
+cand(3,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+%cand(3, [u,l,f,r]). %%SPEED UP
 cand(4,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
-%cand(5,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
-cand(5, [u,br]). %%SPEED UP
+cand(5,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+%cand(5, [u,br]). %%SPEED UP
 %%%%%%%%
 cand(6,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
 cand(7,  [sp1, sp100, sp110]).
@@ -20,12 +20,12 @@ cand(8,  [r_v]).
 cand(9,  [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
 cand(10, [sp1]).
 cand(11, [r_v]).
-%cand(12, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]). 
-cand(12, [l, bl, bdl]). %%SPEED UP
+cand(12, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]). 
+%cand(12, [l, bl, bdl]). %%SPEED UP
 cand(13, [sp1]).
 cand(14, [r_v]).
-%cand(15, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
-cand(15, [dr,r,dl]). %%SPEED UP
+cand(15, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
+%cand(15, [dr,r,dl]). %%SPEED UP
 cand(16, [sp1]).
 cand(17, [r_v]).
 cand(18, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1]).
@@ -55,8 +55,8 @@ cand(41, [sp4]).
 cand(42, [r_v]).
 cand(43, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 cand(44, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
-%cand(45, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
-cand(45, [u,l,sp2]). %%SPEED UP
+cand(45, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+%cand(45, [u,l,sp2]). %%SPEED UP
 cand(46, [sp3]).
 cand(47, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 cand(48, [sp4]).
@@ -85,11 +85,11 @@ cand(67, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 %Notationsfehler - aenderungen starten
 
 cand(68, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
-%cand(69, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
-cand(69, [u,f,l]). %%SPEED UP
+cand(69, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+%cand(69, [u,f,l]). %%SPEED UP
 cand(70, [sp3]).
-%cand(71, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
-cand(71, [l,f,u]). %%SPEED UP
+cand(71, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
+%cand(71, [l,f,u]). %%SPEED UP
 cand(72, [sp4]).
 cand(73, [r_v]).
 
@@ -105,8 +105,8 @@ cand(79, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2]).
 cand(80, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
 cand(81, [sp5, sp6, sp7]).
 cand(82, [r_v]).
-%cand(83, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
-cand(83, [u,bl]). %%SPEED UP
+cand(83, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
+%cand(83, [u,bl]). %%SPEED UP
 cand(84, [sp5, sp6, sp7]).
 cand(85, [r_v]).
 cand(86, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7]).
@@ -123,12 +123,12 @@ cand(94, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4
 cand(95, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
 cand(96, [sp8, sp9]).
 cand(97, [r_v]).
-%cand(98, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
-cand(98, [sp8,u,r_v]).
+cand(98, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
+%cand(98, [sp8,u,r_v]).
 cand(99, [sp8, sp9]).
 cand(100, [r_v]).
-%cand(101, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
-cand(101, [sp5,sp8,r]). %%SPEED UP
+cand(101, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
+%cand(101, [sp5,sp8,r]). %%SPEED UP
 cand(102, [sp8, sp9]).
 cand(103, [r_v]).
 cand(104, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
@@ -137,6 +137,13 @@ cand(106, [r_v]).
 cand(107, [u, l, f, r, br, bl, dl, dr, bdr, bdl, d, r_v, r_ud, sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9]).
 cand(108, [sp8, sp9]).
 cand(109, [r_v]).
+
+%Korrektur 
+cand(110, []).
+cand(111, []).
+cand(112, []).
+%Korrektur ende
+
 
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
@@ -252,7 +259,7 @@ get_stage(Stage, Newstage) :-
 
 % the cube should be finished after stage 28, so we stop here.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-stage([],110,_). %%%%%%%%%%%%%%%%%%% change this for testing
+stage([],113,_). %%%%%%%%%%%%%%%%%%% change this for testing
                                 % example: 3 means go to goal 2
 % this builds the result move list by moving from stage to stage
 % and joining the solutions gathered for each stage
