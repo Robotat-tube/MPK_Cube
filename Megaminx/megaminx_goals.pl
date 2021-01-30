@@ -2297,25 +2297,33 @@ get_goal(114, megaminx(
 "W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
 ).
 
-get_goal(115, megaminx( 
-% 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
-"Gr","L" ,"Gr","O" ,"Gr","T" ,"Gr","T" ,"Gr","Pi","Gr", %Up
+get_goal(115, 
+megaminx(
+    % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
+    W0  ,W1  ,W2  ,W3  ,W4  ,W5  ,W6  ,W7  ,W8  ,W9  ,W10 , %Up
 
-"L" ,"Pi","L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"L" ,"Gr","L" , %Left 
-"Pi","H" ,"Pi","Pi","Pi","Pi","Pi","Pi","Pi","Gr","Pi", %Front
-"H" ,"Gr","H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"H" ,"Gr","H" , %Right
-"T" ,"O" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"T" ,"H" ,"T" , %Back Right
-"O" ,"L" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"O" ,"Gr","O" , %Back Left
+    G0  ,G1  ,G2  ,G3  ,G4  ,G5  ,G6  ,G7  ,G8  ,G9  ,G10 , %Left
+    R0  ,R1  ,R2  ,R3  ,R4  ,R5  ,R6  ,R7  ,R8  ,R9  ,R10 , %Front
+    B0  ,B1  ,B2  ,B3  ,B4  ,B5  ,B6  ,B7  ,B8  ,B9  ,B10 , %Right
+    Y0  ,Y1  ,Y2  ,Y3  ,Y4  ,Y5  ,Y6  ,Y7  ,Y8  ,Y9  ,Y10 , %Back Right
+    Pr0 ,Pr1 ,Pr2 ,Pr3 ,Pr4 ,Pr5 ,Pr6 ,Pr7 ,Pr8 ,Pr9 ,Pr10, %Back Left
 
-"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" ,"B" , %Down Left
-"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" ,"R" , %Down Right
-"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" ,"G" , %Back Down Right 
-"Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr","Pr",%Back
-"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" ,"Y" , %Back Down Left
+    H0  ,H1  ,H2  ,H3  ,H4  ,H5  ,H6  ,H7  ,H8  ,H9  ,H10 , %Down Left
+    Pi0 ,Pi1 ,Pi2 ,Pi3 ,Pi4 ,Pi5 ,Pi6 ,Pi7 ,Pi8 ,Pi9 ,Pi10,  %Down Right
+    L0  ,L1  ,L2  ,L3  ,L4  ,L5  ,L6  ,L7  ,L8  ,L9  ,L10 , %Back Down Right
+    O0  ,O1  ,O2  ,O3  ,O4  ,O5  ,O6  ,O7  ,O8  ,O9  ,O10 , %Back
+    T0  ,T1  ,T2  ,T3  ,T4  ,T5  ,T6  ,T7  ,T8  ,T9  ,T10 , %Back Down Left
 
-"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ,"W" ) %Down 
-).
-
+    Gr0 ,Gr1 ,Gr2 ,Gr3 ,Gr4 ,Gr5 ,Gr6 ,Gr7 ,Gr8 ,Gr9 ,Gr10  %Down
+))
+ :- 
+    %NOTE: ; means or
+    [W1, R9, G1]  = ["Gr", "Pi", "L"]; ["L", "Gr", "Pi"];["Pi", "L", "Gr"] , %and
+    [W3, G9, Pr1] = ["Gr", "L", "O" ]; ["O", "L", "Gr"]; ["Gr", "O", "L"] , %and
+    [W5, Pr9, Y1] = ["Gr", "O", "T" ]; ["T", "Gr", "O"]; ["O", "T", "Gr"] , %and
+    [W7, Y9, B1]  = ["Gr", "T", "H" ]; ["H", "Gr", "T"]; ["T","H", "Gr"] ,%and
+    [W9, B9, R1]  = ["Gr", "H", "Pi"]; ["Pi", "Gr", "H"];["H","Pi", "Gr"]  %and
+    .
 
 get_goal(116, megaminx( 
 % 0 ,1   ,2   ,3   ,4   ,5   ,6   ,7   ,8   ,9   ,10  ,
