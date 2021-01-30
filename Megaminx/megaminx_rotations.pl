@@ -39,8 +39,36 @@ mov(sp8,X,Y) :-
 mov(sp9,X,Y) :-
   move_sequence([-r, -f, +r, +u, +r, -u, -r, +f], X, Y).  
 
+% sp10
+mov(sp10,X,Y) :-
+  move_sequence([+f, +u, +r, -u, -r, -f], X, Y).  
+
+% sp11
+mov(sp11,X,Y) :-
+  move_sequence([+f, +r, +u, -r, -u, -f], X, Y).  
+
+% sp12
+mov(sp12,X,Y) :-
+  move_sequence([+r, +u, -r, +u, +r, +u, +u, +u, -r, +u], X, Y).  
+
+% sp13
+mov(sp13,X,Y) :-
+  move_sequence([-u, +r, +u, +u, -r, -u, +r, -u, -r], X, Y).  
+
+% sp14
+mov(sp14,X,Y) :-
+  move_sequence([-l, +u, +u, +r, -u, -u, +l, +u, +u, -r, -u, -u], X, Y).  
+
+% sp15
+mov(sp15,X,Y) :-
+  move_sequence([+r, -u, -u, -l, +u, +u, -r, -u, -u, +l, +u, +u], X, Y).   
+
+% sp16
+mov(sp16,X,Y) :-
+  move_sequence([-r, -dr, +r, +dr], X, Y).   
 
 
+  
 %%%%%%%%%%%%%%%%%%%%% UP %%%%%%%%%%%%%%%%%%%%%%%%%%%
 mov(u,
 megaminx(
