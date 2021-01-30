@@ -13,10 +13,11 @@ statistics(walltime, [TimeSinceStart | [TimeSinceLastCall]]),
       move_sequence(
 
         %Original (Stuck bei Stage 30 (Getestet für 15 Minuten))
-        [-u, +l, -r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f], %NOTATION BZGL. ROTATIONEN EINHALTEN 
+        %[-u, +l, -r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f], %NOTATION BZGL. ROTATIONEN EINHALTEN 
         
         %Shuffl Original 
-        %[-u, +l, +u, +f, -dl, +r, -dr, +u, -r_v, +r_ud, -r_ud, -dr, +r, -dr, +u, +u, +f, +u, +f, -dl, +r, +f, -dl,-r_v, -dr, +f, -dl, +f], %NOTATION BZGL. ROTATIONEN EINHALTEN 
+        %% SPEEDUP @33 [+br,+bdr,+bdr,-br,-d,+dr,+sp2]
+        [-u, +l, +u, +f, -dl, +r, -dr, +u, -r_v, +r_ud, -r_ud, -dr, +r, -dr, +u, +u, +f, +u, +f, -dl, +r, +f, -dl,-r_v, -dr, +f, -dl, +f], %NOTATION BZGL. ROTATIONEN EINHALTEN 
                 
         %Working (~5 Minuten)
         %[-u, +l, -r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f,-u, +l, -r_v, +r_ud, +u, +f, -dl, +r, -dr, +u, +f, -dl,-r_v, -r_ud, -dr, +u, +f, +u, +f, -dl, +r, -dr, +f, -dl, +r, -dr, +u, +f ], %NOTATION BZGL. ROTATIONEN EINHALTEN 
