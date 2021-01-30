@@ -146,8 +146,8 @@ cand(112, []).
 
 cand(113, [r_v, u, sp10, sp11]).
 cand(114, [r_v, u, sp12, sp13]).
-cand(115, [r_v, u, sp14, sp15]).
-cand(116, [r_v, u, sp16]).
+cand(115, [u, sp14, sp15]).
+cand(116, [u, sp16]).
 
 % catch a candidate move from the list for each stage
 get_candidate(Stage, Move) :-
