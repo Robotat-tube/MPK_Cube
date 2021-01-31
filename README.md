@@ -1,5 +1,9 @@
 # MPK_Cube
 
+## Structure: 
+- Megaminx for Human Solution 
+- MegaminxRBFS for Maschine Solution 
+
 Some test cases for RBFS_UE:
 1) swipl rbfs.pl romaniaroads.pl usroads.pl heuristic.pl
 2) bestfirst(neamt, arad, Solution).
