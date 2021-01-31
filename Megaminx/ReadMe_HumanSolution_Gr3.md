@@ -1,4 +1,4 @@
-# Megaminax Human Solution
+# Megaminx Human Solution
 Gruppe 3: Abdank, Baghdadi, Scheucher, Schillhammer, Wiesmüller
 
 
