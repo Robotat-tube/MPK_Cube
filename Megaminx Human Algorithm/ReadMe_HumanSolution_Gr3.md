@@ -3,7 +3,7 @@ Gruppe 3: Abdank, Baghdadi, Scheucher, Schillhammer, Wiesmüller
 
 
 ### How to Start: 
-- navigate to your /Megaminx Folder
+- navigate to your /Megaminx Human Algorithm Folder
 - <megaminx_algorithm.pl> <megaminx_goals.pl> <megaminx_rotations.pl> Algorithm files
 - <mytest.pl> different Test cases with up to 55 Rotatations 
 - swipl.exe .\megaminx_algorithm.pl .\megaminx_goals.pl .\megaminx_rotations.pl .\mytest.pl
