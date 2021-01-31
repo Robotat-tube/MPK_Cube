@@ -1,12 +1,11 @@
 # MPK_Cube
 
 ## Structure: 
-- Megaminx for Human Solution 
-- MegaminxRBFS for Maschine Solution 
+- Megaminx Human Algorithm
+- Megaminx RBFS 
 
-Some test cases for RBFS_UE:
-1) swipl rbfs.pl romaniaroads.pl usroads.pl heuristic.pl
-2) bestfirst(neamt, arad, Solution).
-3) bestfirst(arad, neamt, Solution).
-4) bestfirst(albanyGA, albanyNY, Solution). 
-5) bestfirst(albanyNY, albanyGA, Solution). 
+Test case for Megaminx Human Algorithm:
+- swipl.exe .\megaminx_algorithm.pl .\megaminx_goals.pl .\megaminx_rotations.pl .\mytest.pl
+
+Test case for Megaminx RBFS :
+- swipl.exe .\heuristic.pl heuristic_test.pl
