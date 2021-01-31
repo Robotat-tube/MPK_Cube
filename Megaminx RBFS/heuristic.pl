@@ -3,10 +3,6 @@ count_common_elements([X|T1],[X|T2],Y):-
      count_common_elements(T1,T2,Z), Y is 1+Z.
 count_common_elements([X1|T1],[X2|T2],Z):- 
      X1\=X2,count_common_elements(T1,T2,Z).
-
-
-assign(X,Y):-
-     X is Y.
      
 heuristic(
     megaminx(

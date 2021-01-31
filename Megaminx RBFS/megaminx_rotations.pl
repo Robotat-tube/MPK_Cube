@@ -1,4 +1,20 @@
 % --------------------------------------------------------------
+% these helpers call the actual rotations
+% --------------------------------------------------------------
+% clockwise move
+move(+Move, OldState, NewState) :-
+  mov(Move, OldState, NewState).
+% counterclockwise move
+move(-Move, OldState, NewState) :-
+  mov(Move, NewState, OldState).
+% empty move list
+move_sequence([],X,X).
+% longer sequence
+move_sequence([Move|Othermoves], X, Z) :-
+  move(Move,X,Y),
+  move_sequence(Othermoves,Y,Z).
+
+% --------------------------------------------------------------
 % some special "moves" that are mapped to longer move sequences
 % --------------------------------------------------------------
 
@@ -10,15 +26,65 @@ mov(sp1,X,Y) :-
 mov(sp2,X,Y) :-
   move_sequence([+dl, +l, -dl, -l, -dl, -f, +dl, +f], X, Y).
 
-% sp100
-mov(sp100,X,Y) :-
-  move_sequence([+dl,+l,-dl,-l], X, Y).
+% sp3
+mov(sp3,X,Y) :-
+  move_sequence([-f, -r, -f, -f, +r, +f], X, Y).
 
-% sp110
-mov(sp110,X,Y) :-
-  move_sequence([+l,-dl,-l,+dl,+dl, +l, +dl,-l], X, Y).
+
+% sp4
+mov(sp4,X,Y) :-
+  move_sequence([+f, +l, +f, +f, -l, -f], X, Y).
+
+% sp5
+mov(sp5,X,Y) :-
+  move_sequence([+u, +r, -u, -r], X, Y).
+
+% sp6
+mov(sp6,X,Y) :-
+  move_sequence([+r, +u, -r], X, Y).
+
+% sp7
+mov(sp7,X,Y) :-
+  move_sequence([+r, -u, -r, +u, +u, +r, +u, -r], X, Y).  
+
+% sp8
+mov(sp8,X,Y) :-
+  move_sequence([+u, +r, -u, -r, -u, -f, +u, +f], X, Y).  
+
+% sp9
+mov(sp9,X,Y) :-
+  move_sequence([-r, -f, +r, +u, +r, -u, -r, +f], X, Y).  
+
+% sp10
+mov(sp10,X,Y) :-
+  move_sequence([+f, +u, +r, -u, -r, -f], X, Y).  
+
+% sp11
+mov(sp11,X,Y) :-
+  move_sequence([+f, +r, +u, -r, -u, -f], X, Y).  
+
+% sp12
+mov(sp12,X,Y) :-
+  move_sequence([+r, +u, -r, +u, +r, +u, +u, +u, -r, +u], X, Y).  
+
+% sp13
+mov(sp13,X,Y) :-
+  move_sequence([-u, +r, +u, +u, -r, -u, +r, -u, -r], X, Y).  
+
+% sp14
+mov(sp14,X,Y) :-
+  move_sequence([-l, +u, +u, +r, -u, -u, +l, +u, +u, -r, -u, -u], X, Y).  
+
+% sp15
+mov(sp15,X,Y) :-
+  move_sequence([+r, -u, -u, -l, +u, +u, -r, -u, -u, +l, +u, +u], X, Y).   
+
+% sp16
+mov(sp16,X,Y) :-
+  move_sequence([-r, -dr, +r, +dr], X, Y).   
+
+
   
-
 %%%%%%%%%%%%%%%%%%%%% UP %%%%%%%%%%%%%%%%%%%%%%%%%%%
 mov(u,
 megaminx(
